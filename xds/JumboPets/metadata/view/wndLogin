@@ -8,7 +8,6 @@
     "userConfig": {
         "autoShow": true,
         "closable": false,
-        "designer|initialView": true,
         "designer|userAlias": "wndlogin",
         "designer|userClassName": "wndLogin",
         "height": 228,

@@ -26,7 +26,8 @@ Ext.application({
     name: 'JumboPets',
 
     launch: function() {
-        Ext.create('JumboPets.view.wndLogin', {renderTo: Ext.getBody()});
+        var window=Ext.create('wndLogin');
+        window.show();
     }
 
 });

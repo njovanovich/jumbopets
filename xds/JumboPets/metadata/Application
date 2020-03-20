@@ -16,5 +16,28 @@
         "views": "typedarray"
     },
     "name": "Application",
-    "designerId": "application"
+    "designerId": "application",
+    "cn": [
+        {
+            "type": "fixedfunction",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "fn": "launch",
+                "implHandler": [
+                    "var window=Ext.create('wndLogin');",
+                    "window.show();"
+                ]
+            },
+            "configAlternates": {
+                "fn": "string",
+                "implHandler": "code"
+            },
+            "name": "launch",
+            "designerId": "02ceecbd-55d5-4994-ba6d-58722880f954"
+        }
+    ]
 }
