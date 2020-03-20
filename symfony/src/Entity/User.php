@@ -18,7 +18,7 @@ class User
 
     /**
      * @var string username
-     * @ORM\Column(type="string")
+     * @ORM\Column(type="string",unique=true)
      */
     private $username;
 
@@ -36,7 +36,7 @@ class User
 
     /**
      * @var string email
-     * @ORM\Column(type="string")
+     * @ORM\Column(type="string",unique=true)
      */
     private $email;
 
@@ -176,5 +176,11 @@ class User
         $this->userStatus = $userStatus;
     }
 
+    public static function encryptPassword($password){
+        return password_hash($password, PASSWORD_DEFAULT);
+    }
 
+    public static function checkPassword($password, $encryptedPassword){
+        return password_verify($password, $encryptedPassword);
+    }
 }

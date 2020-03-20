@@ -17,7 +17,7 @@ class Category
     private $id;
 
     /**
-     * @var naqme name of category
+     * @var name name of category
      * @ORM\Column(type="string")
      */
     private $name;
@@ -28,20 +28,21 @@ class Category
     }
 
     /**
-     * @return naqme
+     * @return name
      */
-    public function getName(): naqme
+    public function getName(): name
     {
         return $this->name;
     }
 
     /**
-     * @param naqme $name
+     * @param name $name
      */
-    public function setName(naqme $name): void
+    public function setName(name $name): void
     {
         $this->name = $name;
     }
 
-    
+
+
 }

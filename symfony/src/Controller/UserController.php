@@ -3,7 +3,10 @@
 namespace App\Controller;
 
 use Symfony\Bundle\FrameworkBundle\Controller\AbstractController;
+use Symfony\Component\HttpFoundation\Request;
+use Symfony\Component\HttpFoundation\Response;
 use Symfony\Component\Routing\Annotation\Route;
+use App\Entity\User;
 
 class UserController extends AbstractController
 {
@@ -70,15 +73,33 @@ class UserController extends AbstractController
 
     /**
      * Logs user into the system
-     * @Route("/user/login}", name="user_login",methods={GET})
+     * @Route("/user/login", name="user_login",methods={GET})
      * Wouldnt this be more secure as a POST ?
      */
-    public function userLogin()
+    public function userLogin(Request $request)
     {
-        return $this->json([
-            'message' => 'Welcome to your new controller!',
-            'path' => 'src/Controller/UserController.php',
-        ]);
+        $em = $this->getDoctrine()->getManager();
+        $repo = $em->getRepository(User::class);
+
+        // get requested parameters
+        $username = $request->get('username');
+        $password = $request->get('password');
+
+        // get the user
+        $found = $repo->findBy(["username"=>$username]);
+        if ($user=$found[0]) {
+            // check password
+            //if(User::checkPassword($password, $user->getPassword())){
+            if ($password == $user->getPassword()) {
+                $expiresAfter = "";
+                return $this->json(null,200,[
+                    "X-Expires-After" => $expiresAfter,
+                    "X-Rate-Limit" => 1000 * 1000,
+                ]);
+            }
+        }
+        $response = new Response("Invalid username/password supplied", 400);
+        return $response;
     }
 
     /**

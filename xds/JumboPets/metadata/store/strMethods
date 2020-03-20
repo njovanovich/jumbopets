@@ -1,0 +1,40 @@
+{
+    "type": "arraystore",
+    "reference": {
+        "name": "items",
+        "type": "array"
+    },
+    "codeClass": null,
+    "userConfig": {
+        "data": [
+            "[{name: \"GET\"},{name: \"PUT\"},{name: \"POST\"},{name: \"DELETE\"}]"
+        ],
+        "designer|userClassName": "strMethods",
+        "storeId": "strMethods"
+    },
+    "configAlternates": {
+        "data": "array",
+        "designer|userClassName": "string",
+        "storeId": "string"
+    },
+    "name": "MyArrayStore",
+    "designerId": "8c436f76-64d9-4a14-bb0f-ef1f0c238ca2",
+    "cn": [
+        {
+            "type": "Ext.data.field.Field",
+            "reference": {
+                "name": "fields",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "name": "type"
+            },
+            "configAlternates": {
+                "name": "string"
+            },
+            "name": "MyField",
+            "designerId": "2be21ead-9bd9-4b30-8f77-0ac2fbef802f"
+        }
+    ]
+}

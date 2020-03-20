@@ -1,0 +1,754 @@
+{
+    "type": "Ext.form.Panel",
+    "reference": {
+        "name": "items",
+        "type": "array"
+    },
+    "codeClass": null,
+    "userConfig": {
+        "designer|userAlias": "frmmain",
+        "designer|userClassName": "frmMain",
+        "height": 424,
+        "id": "frmMain",
+        "layout": "fit",
+        "title": "Jumbo Pets",
+        "width": 848
+    },
+    "configAlternates": {
+        "designer|userAlias": "string",
+        "designer|userClassName": "string",
+        "height": "auto",
+        "id": "string",
+        "layout": "string",
+        "title": "string",
+        "width": "auto"
+    },
+    "name": "MyForm1",
+    "designerId": "7cc0bf25-d568-4f22-8bfc-6e17991dc3b3",
+    "viewControllerInstanceId": "ac62aaf9-1bac-4fc4-bd55-a3bdf77d663e",
+    "viewModelInstanceId": "ebcd8c32-e188-49b2-8504-805d703c8cb2",
+    "cn": [
+        {
+            "type": "Ext.tab.Panel",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "activeTab": 0
+            },
+            "configAlternates": {
+                "activeTab": "auto"
+            },
+            "name": "MyTabPanel",
+            "designerId": "b459b593-7cc1-4927-898e-a1f90da62541",
+            "cn": [
+                {
+                    "type": "Ext.panel.Panel",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "title": "Pet"
+                    },
+                    "configAlternates": {
+                        "title": "string"
+                    },
+                    "name": "MyPanel",
+                    "designerId": "e151ff10-eccc-4ac8-9e3f-5f080cac6a92",
+                    "cn": [
+                        {
+                            "type": "Ext.tab.Tab",
+                            "reference": {
+                                "name": "tabConfig",
+                                "type": "object"
+                            },
+                            "codeClass": null,
+                            "name": "TabConfig",
+                            "designerId": "ed00dc1a-2080-4f0c-8856-7e811df95dcd"
+                        },
+                        {
+                            "type": "Ext.tab.Panel",
+                            "reference": {
+                                "name": "items",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "userConfig": {
+                                "activeTab": 0
+                            },
+                            "configAlternates": {
+                                "activeTab": "auto"
+                            },
+                            "name": "MyTabPanel1",
+                            "designerId": "3aa4936a-ea3a-4e04-91c4-ccf8613fa71e",
+                            "cn": [
+                                {
+                                    "type": "Ext.panel.Panel",
+                                    "reference": {
+                                        "name": "items",
+                                        "type": "array"
+                                    },
+                                    "codeClass": null,
+                                    "userConfig": {
+                                        "title": "Upload Image"
+                                    },
+                                    "configAlternates": {
+                                        "title": "string"
+                                    },
+                                    "name": "MyPanel3",
+                                    "designerId": "ba3723e1-9e23-49d9-8713-b11146fe5120",
+                                    "cn": [
+                                        {
+                                            "type": "Ext.tab.Tab",
+                                            "reference": {
+                                                "name": "tabConfig",
+                                                "type": "object"
+                                            },
+                                            "codeClass": null,
+                                            "name": "TabConfig3",
+                                            "designerId": "90202d76-4973-4305-ac26-4e458a4d292b"
+                                        }
+                                    ]
+                                },
+                                {
+                                    "type": "Ext.panel.Panel",
+                                    "reference": {
+                                        "name": "items",
+                                        "type": "array"
+                                    },
+                                    "codeClass": null,
+                                    "userConfig": {
+                                        "title": "Add"
+                                    },
+                                    "configAlternates": {
+                                        "title": "string"
+                                    },
+                                    "name": "MyPanel4",
+                                    "designerId": "2b50d1ae-0c43-467e-98ab-505dd28aa365",
+                                    "cn": [
+                                        {
+                                            "type": "Ext.tab.Tab",
+                                            "reference": {
+                                                "name": "tabConfig",
+                                                "type": "object"
+                                            },
+                                            "codeClass": null,
+                                            "name": "TabConfig4",
+                                            "designerId": "9409d66b-b08a-4851-88b5-de114984a26a"
+                                        }
+                                    ]
+                                },
+                                {
+                                    "type": "Ext.panel.Panel",
+                                    "reference": {
+                                        "name": "items",
+                                        "type": "array"
+                                    },
+                                    "codeClass": null,
+                                    "userConfig": {
+                                        "title": "Update"
+                                    },
+                                    "configAlternates": {
+                                        "title": "string"
+                                    },
+                                    "name": "MyPanel5",
+                                    "designerId": "8d6cd7a0-97ea-4e5b-91d8-9352142f2366",
+                                    "cn": [
+                                        {
+                                            "type": "Ext.tab.Tab",
+                                            "reference": {
+                                                "name": "tabConfig",
+                                                "type": "object"
+                                            },
+                                            "codeClass": null,
+                                            "name": "TabConfig5",
+                                            "designerId": "f0f6965b-fc31-4692-a865-7172cb220010"
+                                        }
+                                    ]
+                                },
+                                {
+                                    "type": "Ext.panel.Panel",
+                                    "reference": {
+                                        "name": "items",
+                                        "type": "array"
+                                    },
+                                    "codeClass": null,
+                                    "userConfig": {
+                                        "title": "Find By Status"
+                                    },
+                                    "configAlternates": {
+                                        "title": "string"
+                                    },
+                                    "name": "MyPanel6",
+                                    "designerId": "ebc8b4aa-1b99-408d-b63f-fe664bcb9395",
+                                    "cn": [
+                                        {
+                                            "type": "Ext.tab.Tab",
+                                            "reference": {
+                                                "name": "tabConfig",
+                                                "type": "object"
+                                            },
+                                            "codeClass": null,
+                                            "name": "TabConfig5",
+                                            "designerId": "8031b2c5-33c2-4be7-8c8e-6d5583099209"
+                                        }
+                                    ]
+                                },
+                                {
+                                    "type": "Ext.panel.Panel",
+                                    "reference": {
+                                        "name": "items",
+                                        "type": "array"
+                                    },
+                                    "codeClass": null,
+                                    "userConfig": {
+                                        "title": "Find By Tags"
+                                    },
+                                    "configAlternates": {
+                                        "title": "string"
+                                    },
+                                    "name": "MyPanel7",
+                                    "designerId": "efe14a8d-f5bc-4f30-ad7d-4d1b719dafab",
+                                    "cn": [
+                                        {
+                                            "type": "Ext.tab.Tab",
+                                            "reference": {
+                                                "name": "tabConfig",
+                                                "type": "object"
+                                            },
+                                            "codeClass": null,
+                                            "name": "TabConfig5",
+                                            "designerId": "b68fd318-e07b-4720-8e12-8b4a286a4f85"
+                                        }
+                                    ]
+                                },
+                                {
+                                    "type": "Ext.panel.Panel",
+                                    "reference": {
+                                        "name": "items",
+                                        "type": "array"
+                                    },
+                                    "codeClass": null,
+                                    "userConfig": {
+                                        "title": "Find By ID"
+                                    },
+                                    "configAlternates": {
+                                        "title": "string"
+                                    },
+                                    "name": "MyPanel8",
+                                    "designerId": "1b5c147c-6e90-4646-9cab-fa35b239d125",
+                                    "cn": [
+                                        {
+                                            "type": "Ext.tab.Tab",
+                                            "reference": {
+                                                "name": "tabConfig",
+                                                "type": "object"
+                                            },
+                                            "codeClass": null,
+                                            "name": "TabConfig5",
+                                            "designerId": "a67547f4-690d-4b83-aac6-285caa579542"
+                                        }
+                                    ]
+                                },
+                                {
+                                    "type": "Ext.panel.Panel",
+                                    "reference": {
+                                        "name": "items",
+                                        "type": "array"
+                                    },
+                                    "codeClass": null,
+                                    "userConfig": {
+                                        "title": "Update with Form"
+                                    },
+                                    "configAlternates": {
+                                        "title": "string"
+                                    },
+                                    "name": "MyPanel9",
+                                    "designerId": "77e5ca2b-193d-4c99-ab19-be1d8e3cc753",
+                                    "cn": [
+                                        {
+                                            "type": "Ext.tab.Tab",
+                                            "reference": {
+                                                "name": "tabConfig",
+                                                "type": "object"
+                                            },
+                                            "codeClass": null,
+                                            "name": "TabConfig5",
+                                            "designerId": "79d517cb-0e29-4d37-96c4-f4791bd3ba87"
+                                        }
+                                    ]
+                                },
+                                {
+                                    "type": "Ext.panel.Panel",
+                                    "reference": {
+                                        "name": "items",
+                                        "type": "array"
+                                    },
+                                    "codeClass": null,
+                                    "userConfig": {
+                                        "title": "Delete",
+                                        "width": 604
+                                    },
+                                    "configAlternates": {
+                                        "title": "string",
+                                        "width": "auto"
+                                    },
+                                    "name": "MyPanel10",
+                                    "designerId": "673c9efd-121a-4f58-96d1-8a08456c61b6",
+                                    "cn": [
+                                        {
+                                            "type": "Ext.tab.Tab",
+                                            "reference": {
+                                                "name": "tabConfig",
+                                                "type": "object"
+                                            },
+                                            "codeClass": null,
+                                            "name": "TabConfig5",
+                                            "designerId": "d27ca169-b870-434b-b392-552ca37656ea"
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "type": "Ext.panel.Panel",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "layout": "fit",
+                        "title": "Store"
+                    },
+                    "configAlternates": {
+                        "layout": "string",
+                        "title": "string"
+                    },
+                    "name": "MyPanel1",
+                    "designerId": "d5b46680-a166-484c-9c5b-e3eff6739c0f",
+                    "cn": [
+                        {
+                            "type": "Ext.tab.Tab",
+                            "reference": {
+                                "name": "tabConfig",
+                                "type": "object"
+                            },
+                            "codeClass": null,
+                            "name": "TabConfig1",
+                            "designerId": "be5a7a94-73d3-4240-b630-2cf777e7a31a"
+                        },
+                        {
+                            "type": "Ext.tab.Panel",
+                            "reference": {
+                                "name": "items",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "userConfig": {
+                                "activeTab": 0
+                            },
+                            "configAlternates": {
+                                "activeTab": "auto"
+                            },
+                            "name": "MyTabPanel2",
+                            "designerId": "12444e38-2c6a-4f7e-8df6-6dd0f8d1ff19",
+                            "cn": [
+                                {
+                                    "type": "Ext.panel.Panel",
+                                    "reference": {
+                                        "name": "items",
+                                        "type": "array"
+                                    },
+                                    "codeClass": null,
+                                    "userConfig": {
+                                        "title": "Order Pet"
+                                    },
+                                    "configAlternates": {
+                                        "title": "string"
+                                    },
+                                    "name": "MyPanel11",
+                                    "designerId": "8f9fa79a-c397-462f-8317-7bb196a6f83e",
+                                    "cn": [
+                                        {
+                                            "type": "Ext.tab.Tab",
+                                            "reference": {
+                                                "name": "tabConfig",
+                                                "type": "object"
+                                            },
+                                            "codeClass": null,
+                                            "name": "TabConfig6",
+                                            "designerId": "4e7e4973-0420-4854-8fc2-355bf64bfab6"
+                                        }
+                                    ]
+                                },
+                                {
+                                    "type": "Ext.panel.Panel",
+                                    "reference": {
+                                        "name": "items",
+                                        "type": "array"
+                                    },
+                                    "codeClass": null,
+                                    "userConfig": {
+                                        "title": "Find Order"
+                                    },
+                                    "configAlternates": {
+                                        "title": "string"
+                                    },
+                                    "name": "MyPanel12",
+                                    "designerId": "4369175b-9c7f-443a-843f-d8692f945b3e",
+                                    "cn": [
+                                        {
+                                            "type": "Ext.tab.Tab",
+                                            "reference": {
+                                                "name": "tabConfig",
+                                                "type": "object"
+                                            },
+                                            "codeClass": null,
+                                            "name": "TabConfig7",
+                                            "designerId": "fd877004-73cd-4bfe-aa96-cc6650f0c18d"
+                                        }
+                                    ]
+                                },
+                                {
+                                    "type": "Ext.panel.Panel",
+                                    "reference": {
+                                        "name": "items",
+                                        "type": "array"
+                                    },
+                                    "codeClass": null,
+                                    "userConfig": {
+                                        "title": "Delete Order"
+                                    },
+                                    "configAlternates": {
+                                        "title": "string"
+                                    },
+                                    "name": "MyPanel13",
+                                    "designerId": "b718fa04-392f-4f2a-8ce4-295d72610165",
+                                    "cn": [
+                                        {
+                                            "type": "Ext.tab.Tab",
+                                            "reference": {
+                                                "name": "tabConfig",
+                                                "type": "object"
+                                            },
+                                            "codeClass": null,
+                                            "name": "TabConfig8",
+                                            "designerId": "914a238f-fa9a-4633-a782-6bb231c4e364"
+                                        }
+                                    ]
+                                },
+                                {
+                                    "type": "Ext.panel.Panel",
+                                    "reference": {
+                                        "name": "items",
+                                        "type": "array"
+                                    },
+                                    "codeClass": null,
+                                    "userConfig": {
+                                        "title": "Inventory"
+                                    },
+                                    "configAlternates": {
+                                        "title": "string"
+                                    },
+                                    "name": "MyPanel14",
+                                    "designerId": "8251b9ed-b989-445b-803b-7222f580a8f7",
+                                    "cn": [
+                                        {
+                                            "type": "Ext.tab.Tab",
+                                            "reference": {
+                                                "name": "tabConfig",
+                                                "type": "object"
+                                            },
+                                            "codeClass": null,
+                                            "name": "TabConfig8",
+                                            "designerId": "dc763c6a-f671-4de3-b160-a12cbb18ba2e"
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "type": "Ext.panel.Panel",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "layout": "fit",
+                        "title": "User"
+                    },
+                    "configAlternates": {
+                        "layout": "string",
+                        "title": "string"
+                    },
+                    "name": "MyPanel2",
+                    "designerId": "18dcb171-dc00-493c-9b46-b2d096fd11cb",
+                    "cn": [
+                        {
+                            "type": "Ext.tab.Tab",
+                            "reference": {
+                                "name": "tabConfig",
+                                "type": "object"
+                            },
+                            "codeClass": null,
+                            "name": "TabConfig2",
+                            "designerId": "d171ba5c-ce93-426d-8c89-d7829e6474ca"
+                        },
+                        {
+                            "type": "Ext.tab.Panel",
+                            "reference": {
+                                "name": "items",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "userConfig": {
+                                "activeTab": 0
+                            },
+                            "configAlternates": {
+                                "activeTab": "auto"
+                            },
+                            "name": "MyTabPanel3",
+                            "designerId": "126df415-95cb-4226-a2bd-0fb38043f818",
+                            "cn": [
+                                {
+                                    "type": "Ext.panel.Panel",
+                                    "reference": {
+                                        "name": "items",
+                                        "type": "array"
+                                    },
+                                    "codeClass": null,
+                                    "userConfig": {
+                                        "title": "Create w/ Array"
+                                    },
+                                    "configAlternates": {
+                                        "title": "string"
+                                    },
+                                    "name": "MyPanel15",
+                                    "designerId": "a2e70928-f8da-4b70-9f00-777b7b3d246d",
+                                    "cn": [
+                                        {
+                                            "type": "Ext.tab.Tab",
+                                            "reference": {
+                                                "name": "tabConfig",
+                                                "type": "object"
+                                            },
+                                            "codeClass": null,
+                                            "name": "TabConfig9",
+                                            "designerId": "a08271e3-0094-4be5-a084-7c9470a3a231"
+                                        }
+                                    ]
+                                },
+                                {
+                                    "type": "Ext.panel.Panel",
+                                    "reference": {
+                                        "name": "items",
+                                        "type": "array"
+                                    },
+                                    "codeClass": null,
+                                    "userConfig": {
+                                        "title": "Cr4eate w/ List"
+                                    },
+                                    "configAlternates": {
+                                        "title": "string"
+                                    },
+                                    "name": "MyPanel16",
+                                    "designerId": "c9788830-c47f-4a37-9c1a-420548d96708",
+                                    "cn": [
+                                        {
+                                            "type": "Ext.tab.Tab",
+                                            "reference": {
+                                                "name": "tabConfig",
+                                                "type": "object"
+                                            },
+                                            "codeClass": null,
+                                            "name": "TabConfig10",
+                                            "designerId": "59973676-59c4-4e52-bf82-b79fe0de18e7"
+                                        }
+                                    ]
+                                },
+                                {
+                                    "type": "Ext.panel.Panel",
+                                    "reference": {
+                                        "name": "items",
+                                        "type": "array"
+                                    },
+                                    "codeClass": null,
+                                    "userConfig": {
+                                        "title": "Get"
+                                    },
+                                    "configAlternates": {
+                                        "title": "string"
+                                    },
+                                    "name": "MyPanel17",
+                                    "designerId": "a217dbc4-1508-449f-b8c6-006291c988ec",
+                                    "cn": [
+                                        {
+                                            "type": "Ext.tab.Tab",
+                                            "reference": {
+                                                "name": "tabConfig",
+                                                "type": "object"
+                                            },
+                                            "codeClass": null,
+                                            "name": "TabConfig11",
+                                            "designerId": "bb3e22fb-2adb-4a84-b040-dd720084518e"
+                                        }
+                                    ]
+                                },
+                                {
+                                    "type": "Ext.panel.Panel",
+                                    "reference": {
+                                        "name": "items",
+                                        "type": "array"
+                                    },
+                                    "codeClass": null,
+                                    "userConfig": {
+                                        "title": "Update"
+                                    },
+                                    "configAlternates": {
+                                        "title": "string"
+                                    },
+                                    "name": "MyPanel18",
+                                    "designerId": "12581ae7-a722-4c00-9a57-009e98fd34be",
+                                    "cn": [
+                                        {
+                                            "type": "Ext.tab.Tab",
+                                            "reference": {
+                                                "name": "tabConfig",
+                                                "type": "object"
+                                            },
+                                            "codeClass": null,
+                                            "name": "TabConfig11",
+                                            "designerId": "e8b590eb-3619-422e-a273-5ac35d6fa17e"
+                                        }
+                                    ]
+                                },
+                                {
+                                    "type": "Ext.panel.Panel",
+                                    "reference": {
+                                        "name": "items",
+                                        "type": "array"
+                                    },
+                                    "codeClass": null,
+                                    "userConfig": {
+                                        "title": "Delete"
+                                    },
+                                    "configAlternates": {
+                                        "title": "string"
+                                    },
+                                    "name": "MyPanel19",
+                                    "designerId": "0e8e46bb-1cf0-4e40-aa32-6dd2e05ad537",
+                                    "cn": [
+                                        {
+                                            "type": "Ext.tab.Tab",
+                                            "reference": {
+                                                "name": "tabConfig",
+                                                "type": "object"
+                                            },
+                                            "codeClass": null,
+                                            "name": "TabConfig11",
+                                            "designerId": "1c0599df-c691-4db5-a335-20b2b5295eb8"
+                                        }
+                                    ]
+                                },
+                                {
+                                    "type": "Ext.panel.Panel",
+                                    "reference": {
+                                        "name": "items",
+                                        "type": "array"
+                                    },
+                                    "codeClass": null,
+                                    "userConfig": {
+                                        "title": "Login"
+                                    },
+                                    "configAlternates": {
+                                        "title": "string"
+                                    },
+                                    "name": "MyPanel20",
+                                    "designerId": "62fc152a-a44b-40c4-a740-af2a61cf57fc",
+                                    "cn": [
+                                        {
+                                            "type": "Ext.tab.Tab",
+                                            "reference": {
+                                                "name": "tabConfig",
+                                                "type": "object"
+                                            },
+                                            "codeClass": null,
+                                            "name": "TabConfig11",
+                                            "designerId": "0a6f7318-128e-467f-9256-ec5bf6b6b3a0"
+                                        }
+                                    ]
+                                },
+                                {
+                                    "type": "Ext.panel.Panel",
+                                    "reference": {
+                                        "name": "items",
+                                        "type": "array"
+                                    },
+                                    "codeClass": null,
+                                    "userConfig": {
+                                        "title": "Logout"
+                                    },
+                                    "configAlternates": {
+                                        "title": "string"
+                                    },
+                                    "name": "MyPanel21",
+                                    "designerId": "8ef922e0-532d-41b1-8290-c49d4ecf5636",
+                                    "cn": [
+                                        {
+                                            "type": "Ext.tab.Tab",
+                                            "reference": {
+                                                "name": "tabConfig",
+                                                "type": "object"
+                                            },
+                                            "codeClass": null,
+                                            "name": "TabConfig11",
+                                            "designerId": "a1a58275-119b-4089-83a6-4c16a3bde90b"
+                                        }
+                                    ]
+                                },
+                                {
+                                    "type": "Ext.panel.Panel",
+                                    "reference": {
+                                        "name": "items",
+                                        "type": "array"
+                                    },
+                                    "codeClass": null,
+                                    "userConfig": {
+                                        "title": "Create"
+                                    },
+                                    "configAlternates": {
+                                        "title": "string"
+                                    },
+                                    "name": "MyPanel22",
+                                    "designerId": "bf4765db-13f4-4e8a-830e-3a10563af90a",
+                                    "cn": [
+                                        {
+                                            "type": "Ext.tab.Tab",
+                                            "reference": {
+                                                "name": "tabConfig",
+                                                "type": "object"
+                                            },
+                                            "codeClass": null,
+                                            "name": "TabConfig11",
+                                            "designerId": "6a1f0857-c68e-462e-8f96-7c6976aa2ce5"
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}

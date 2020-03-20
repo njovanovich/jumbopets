@@ -7,14 +7,14 @@
             "frameworkVersion": "6.6.0.258"
         },
         "urlPrefixTemplate": "http://localhost:{port}/{path}",
-        "urlPrefix": "http://localhost:61510/",
+        "urlPrefix": "http://localhost:62883/",
         "exportPath": "W:/jumbopets/htmljs",
         "buildShouldOverwriteIndex": true,
-        "generateArchitectVersion": true,
+        "generateArchitectVersion": false,
         "spacesToIndent": 4,
         "lineEnding": "CRLF",
-        "genTimestamps": false,
-        "cacheBust": false,
+        "genTimestamps": true,
+        "cacheBust": true,
         "installStatus": "Not Installed",
         "canvasControls": {
             "viewportSize": {
@@ -33,15 +33,21 @@
     "framework": "ext66",
     "viewOrderMap": {
         "view": [
-            "da6f5047-0be2-48f5-9ab9-c8332aefb9d9",
-            "4e7d7746-1cec-45bb-a9b1-ddba6c7d89fb",
-            "d100cdfa-c738-4938-8225-ff1fb41df639"
+            "d100cdfa-c738-4938-8225-ff1fb41df639",
+            "7cc0bf25-d568-4f22-8bfc-6e17991dc3b3",
+            "ebcd8c32-e188-49b2-8504-805d703c8cb2",
+            "ac62aaf9-1bac-4fc4-bd55-a3bdf77d663e",
+            "8ae3d0e7-75b4-420f-aa71-70bac4c02217",
+            "4bd62311-0943-4a10-ae77-6d1fbf96e4d4",
+            "dd1c5219-6294-47a6-9204-b6366482426e"
         ],
-        "store": [],
+        "store": [
+            "8c436f76-64d9-4a14-bb0f-ef1f0c238ca2"
+        ],
         "controller": [],
         "model": [],
         "resource": [
-            "965f063d-5ca9-49be-8cdd-915fce63965d",
+            "b482dbf9-f4a1-4e8a-af8c-c8b2d450d8c9",
             "8d0d8e00-8e8d-4e67-8f94-63be02ffd918"
         ],
         "app": [

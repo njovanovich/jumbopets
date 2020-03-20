@@ -32,8 +32,8 @@
     },
     "name": "MyWindow1",
     "designerId": "d100cdfa-c738-4938-8225-ff1fb41df639",
-    "viewControllerInstanceId": "4e7d7746-1cec-45bb-a9b1-ddba6c7d89fb",
-    "viewModelInstanceId": "da6f5047-0be2-48f5-9ab9-c8332aefb9d9",
+    "viewControllerInstanceId": "f76abfb5-9220-4162-bc7b-8c4189d2094b",
+    "viewModelInstanceId": "7eebc24e-3467-401b-9d4d-70af404c87fa",
     "cn": [
         {
             "type": "basiceventbinding",
@@ -58,8 +58,8 @@
                     "    return \"\";",
                     "}",
                     "var email = accessCookie(\"remember\");",
-                    "Ext.getCmp('txtLoginEmail').setValue(email);",
                     "if (email) {",
+                    "    Ext.getCmp('txtLoginEmail').setValue(email);",
                     "    Ext.getCmp('chkRememberMe').setValue(true);",
                     "}"
                 ],
@@ -107,18 +107,24 @@
                     },
                     "codeClass": null,
                     "userConfig": {
-                        "fieldLabel": "Email",
+                        "fieldLabel": "Username",
                         "id": "txtLoginEmail",
                         "labelWidth": 60,
                         "layout|x": 50,
-                        "layout|y": 80
+                        "layout|y": 80,
+                        "value": [
+                            "'user'"
+                        ],
+                        "vtype": "alpha"
                     },
                     "configAlternates": {
                         "fieldLabel": "string",
                         "labelWidth": "number",
                         "layout|x": "number",
                         "layout|y": "number",
-                        "id": "string"
+                        "id": "string",
+                        "value": "object",
+                        "vtype": "string"
                     },
                     "name": "MyTextField2",
                     "designerId": "a87acb1f-fcef-4b2b-8ad7-c38860867958"
@@ -137,7 +143,10 @@
                         "inputType": "password",
                         "labelWidth": 60,
                         "layout|x": 50,
-                        "layout|y": 110
+                        "layout|y": 110,
+                        "value": [
+                            "password"
+                        ]
                     },
                     "configAlternates": {
                         "fieldLabel": "string",
@@ -146,7 +155,8 @@
                         "layout|y": "number",
                         "id": "string",
                         "inputType": "string",
-                        "enableKeyEvents": "boolean"
+                        "enableKeyEvents": "boolean",
+                        "value": "object"
                     },
                     "name": "MyTextField3",
                     "designerId": "6d304696-f42f-47e9-91cb-0d8201eb0dea",
@@ -237,43 +247,25 @@
                             "userConfig": {
                                 "fn": "onButtonClick",
                                 "implHandler": [
-                                    "var email = Ext.getCmp('txtLoginEmail').getValue();",
+                                    "var username = Ext.getCmp('txtLoginEmail').getValue();",
                                     "var password = Ext.getCmp('txtLoginPassword').getValue();",
-                                    "",
-                                    "if (Ext.getCmp('chkRememberMe').getValue()) {",
-                                    "    var date = new Date();",
-                                    "    date.setTime(date.getTime()+(24*60*60*10000));",
-                                    "    document.cookie = \"remember=\"+email+\"; expires=\" + date.toGMTString();",
-                                    "} else {",
-                                    "    function delete_cookie(name) {",
-                                    "      document.cookie = name +'=; Path=/; Expires=Thu, 01 Jan 1970 00:00:01 GMT;';",
-                                    "    }",
-                                    "    delete_cookie(\"remember\");",
-                                    "}",
                                     "",
                                     "Ext.Ajax.request({",
                                     "    url: '/api/user/login',",
-                                    "    method: \"POST\",",
+                                    "    method: \"GET\",",
                                     "    scope: this,",
                                     "    params: {",
-                                    "        email: email,",
+                                    "        username: username,",
                                     "        password: password",
                                     "    },",
                                     "    success: function (response, eopts) {",
-                                    "        var obj = Ext.decode(response.responseText);",
-                                    "        if (!obj.success) {",
-                                    "            Ext.Msg.alert(\"Failure\", obj.message);",
-                                    "        } else {",
-                                    "            var form = Ext.create('CrmApp.view.frmMain', {",
-                                    "                renderTo: Ext.getBody()",
-                                    "            });",
-                                    "            Ext.getCmp('frmMain').populateUi();",
-                                    "            this.close();",
-                                    "            if (obj.resetPassword) {",
-                                    "                var window = fetchOrCreate(\"wndResetPassword\");",
-                                    "                window.show();",
-                                    "            }",
-                                    "        }",
+                                    "",
+                                    "        var form = Ext.create('JumboPets.view.frmMain', {",
+                                    "            renderTo: Ext.getBody()",
+                                    "        });",
+                                    "    },",
+                                    "    failure: function(){",
+                                    "        Ext.Msg.alert(\"Alert\",\"Invalid username/password supplied\");",
                                     "    }",
                                     "});"
                                 ],
@@ -311,49 +303,7 @@
                         "text": "string"
                     },
                     "name": "MyButton31",
-                    "designerId": "131dafbd-cdaf-42a6-b2c0-3271a4e826b1",
-                    "cn": [
-                        {
-                            "type": "basiceventbinding",
-                            "reference": {
-                                "name": "listeners",
-                                "type": "array"
-                            },
-                            "codeClass": null,
-                            "userConfig": {
-                                "fn": "onButtonClick1",
-                                "implHandler": [
-                                    "var email = Ext.getCmp('txtLoginEmail').getValue();",
-                                    "Ext.Ajax.request({",
-                                    "    url: '/api/user/password/reminder',",
-                                    "    method: \"POST\",",
-                                    "    scope: this,",
-                                    "    params: {",
-                                    "        email: email",
-                                    "    },",
-                                    "    success: function (response, eopts) {",
-                                    "        var obj = Ext.decode(response.responseText);",
-                                    "        if (!obj.success) {",
-                                    "            Ext.Msg.alert(\"Failure\", \"Your email address was not found in the database\");",
-                                    "        } else {",
-                                    "            Ext.Msg.alert(\"Success\", \"Your email has been forwarded your new password\");",
-                                    "        }",
-                                    "    }",
-                                    "});"
-                                ],
-                                "name": "click",
-                                "scope": "me"
-                            },
-                            "configAlternates": {
-                                "fn": "string",
-                                "implHandler": "code",
-                                "name": "string",
-                                "scope": "string"
-                            },
-                            "name": "onButtonClick1",
-                            "designerId": "c027ae69-7c1a-43b1-84cb-3479124dd468"
-                        }
-                    ]
+                    "designerId": "131dafbd-cdaf-42a6-b2c0-3271a4e826b1"
                 },
                 {
                     "type": "Ext.Img",
@@ -366,7 +316,7 @@
                         "height": 57,
                         "layout|x": 80,
                         "layout|y": 10,
-                        "src": "/images/logo.svg",
+                        "src": "/images/logo.png",
                         "width": 160
                     },
                     "configAlternates": {

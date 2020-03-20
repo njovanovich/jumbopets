@@ -39,7 +39,7 @@ class Pet
     /**
      * @var text tags of pet
      * @ORM\ManyToMany(targetEntity="App\Entity\Tag")
-     * @ORM\JoinTable(name="job_notes",
+     * @ORM\JoinTable(name="pet_tags",
      *      joinColumns={@ORM\JoinColumn(name="tag",referencedColumnName="id",onDelete="CASCADE")},
      *      inverseJoinColumns={@ORM\JoinColumn(name="pet",referencedColumnName="id",onDelete="CASCADE")}
      * )

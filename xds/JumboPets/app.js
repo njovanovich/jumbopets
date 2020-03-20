@@ -20,14 +20,29 @@ Ext.Loader.setConfig({
 
 
 Ext.application({
+    stores: [
+        'strMethods'
+    ],
     views: [
-        'wndLogin'
+        'wndLogin',
+        'frmMain',
+        'frmBody'
     ],
     name: 'JumboPets',
 
     launch: function() {
-        var window=Ext.create('wndLogin');
-        window.show();
+        var w=Ext.create('JumboPets.view.wndLogin');
+        w.show();
+        window.onresize = function(event) {
+            var win = window,
+                doc = document,
+                docElem = doc.documentElement,
+                body = doc.getElementsByTagName('body')[0],
+                x = win.innerWidth || docElem.clientWidth || body.clientWidth,
+                y = win.innerHeight|| docElem.clientHeight|| body.clientHeight;
+            Ext.getCmp('frmMain').setHeight(y);
+            Ext.getCmp('frmMain').setWidth(x);
+        };
     }
 
 });
