@@ -1,0 +1,386 @@
+{
+    "type": "Ext.window.Window",
+    "reference": {
+        "name": "items",
+        "type": "array"
+    },
+    "codeClass": null,
+    "userConfig": {
+        "autoShow": true,
+        "closable": false,
+        "designer|initialView": true,
+        "designer|userAlias": "wndlogin",
+        "designer|userClassName": "wndLogin",
+        "height": 228,
+        "id": "wndLogin",
+        "layout": "fit",
+        "modal": true,
+        "title": "Login to Jumbo Pets",
+        "width": 326
+    },
+    "configAlternates": {
+        "closable": "boolean",
+        "designer|userAlias": "string",
+        "designer|userClassName": "string",
+        "height": "auto",
+        "id": "string",
+        "layout": "string",
+        "modal": "boolean",
+        "title": "string",
+        "width": "auto",
+        "autoShow": "boolean",
+        "designer|initialView": "boolean"
+    },
+    "name": "MyWindow1",
+    "designerId": "d100cdfa-c738-4938-8225-ff1fb41df639",
+    "viewControllerInstanceId": "4e7d7746-1cec-45bb-a9b1-ddba6c7d89fb",
+    "viewModelInstanceId": "da6f5047-0be2-48f5-9ab9-c8332aefb9d9",
+    "cn": [
+        {
+            "type": "basiceventbinding",
+            "reference": {
+                "name": "listeners",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "fn": "onWndLoginAfterRender",
+                "implHandler": [
+                    "function accessCookie(cookieName)",
+                    "{",
+                    "    var name = cookieName + \"=\";",
+                    "    var allCookieArray = document.cookie.split(';');",
+                    "    for(var i=0; i<allCookieArray.length; i++)",
+                    "    {",
+                    "        var temp = allCookieArray[i].trim();",
+                    "        if (temp.indexOf(name)==0)",
+                    "            return temp.substring(name.length,temp.length);",
+                    "    }",
+                    "    return \"\";",
+                    "}",
+                    "var email = accessCookie(\"remember\");",
+                    "Ext.getCmp('txtLoginEmail').setValue(email);",
+                    "if (email) {",
+                    "    Ext.getCmp('chkRememberMe').setValue(true);",
+                    "}"
+                ],
+                "name": "afterrender",
+                "scope": "me"
+            },
+            "configAlternates": {
+                "fn": "string",
+                "implHandler": "code",
+                "name": "string",
+                "scope": "string"
+            },
+            "name": "onWndLoginAfterRender",
+            "designerId": "67907048-7eda-4bf8-86a9-6f7e655b1d06"
+        },
+        {
+            "type": "Ext.form.Panel",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "bodyPadding": 10,
+                "border": false,
+                "designer|snapToGrid": 10,
+                "layout": "absolute",
+                "title": ""
+            },
+            "configAlternates": {
+                "bodyPadding": "auto",
+                "designer|snapToGrid": "number",
+                "layout": "string",
+                "title": "string",
+                "border": "boolean"
+            },
+            "name": "MyForm",
+            "designerId": "6d31367c-da5f-45bc-9fff-166995d711da",
+            "cn": [
+                {
+                    "type": "Ext.form.field.Text",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "fieldLabel": "Email",
+                        "id": "txtLoginEmail",
+                        "labelWidth": 60,
+                        "layout|x": 50,
+                        "layout|y": 80
+                    },
+                    "configAlternates": {
+                        "fieldLabel": "string",
+                        "labelWidth": "number",
+                        "layout|x": "number",
+                        "layout|y": "number",
+                        "id": "string"
+                    },
+                    "name": "MyTextField2",
+                    "designerId": "a87acb1f-fcef-4b2b-8ad7-c38860867958"
+                },
+                {
+                    "type": "Ext.form.field.Text",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "enableKeyEvents": true,
+                        "fieldLabel": "Password",
+                        "id": "txtLoginPassword",
+                        "inputType": "password",
+                        "labelWidth": 60,
+                        "layout|x": 50,
+                        "layout|y": 110
+                    },
+                    "configAlternates": {
+                        "fieldLabel": "string",
+                        "labelWidth": "number",
+                        "layout|x": "number",
+                        "layout|y": "number",
+                        "id": "string",
+                        "inputType": "string",
+                        "enableKeyEvents": "boolean"
+                    },
+                    "name": "MyTextField3",
+                    "designerId": "6d304696-f42f-47e9-91cb-0d8201eb0dea",
+                    "cn": [
+                        {
+                            "type": "basiceventbinding",
+                            "reference": {
+                                "name": "listeners",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "userConfig": {
+                                "fn": "onTxtLoginPasswordKeyup",
+                                "implHandler": [
+                                    "if (e.keyCode == 13) {",
+                                    "    Ext.getCmp('btnLogin').fireEvent('click');",
+                                    "}"
+                                ],
+                                "name": "keyup",
+                                "scope": "me"
+                            },
+                            "configAlternates": {
+                                "fn": "string",
+                                "implHandler": "code",
+                                "name": "string",
+                                "scope": "string"
+                            },
+                            "name": "onTxtLoginPasswordKeyup",
+                            "designerId": "a2bb141a-cbd0-426a-b475-d546310623ff"
+                        }
+                    ]
+                },
+                {
+                    "type": "Ext.form.field.Checkbox",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "boxLabel": "Remember Me",
+                        "fieldLabel": "",
+                        "id": "chkRememberMe",
+                        "layout|x": 114,
+                        "layout|y": 135
+                    },
+                    "configAlternates": {
+                        "boxLabel": "string",
+                        "fieldLabel": "string",
+                        "id": "string",
+                        "layout|x": "number",
+                        "layout|y": "number"
+                    },
+                    "name": "MyCheckbox",
+                    "designerId": "ad6a315d-2692-454f-af81-9f2380650aae"
+                },
+                {
+                    "type": "Ext.button.Button",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "icon": "/images/icons/png/16x16/Key.png",
+                        "id": "btnLogin",
+                        "layout|x": 210,
+                        "layout|y": 160,
+                        "text": "Login"
+                    },
+                    "configAlternates": {
+                        "icon": "string",
+                        "layout|x": "number",
+                        "layout|y": "number",
+                        "text": "string",
+                        "id": "string"
+                    },
+                    "name": "MyButton27",
+                    "designerId": "ac576fba-ee1c-4101-ad2f-f6209afb5ac3",
+                    "cn": [
+                        {
+                            "type": "basiceventbinding",
+                            "reference": {
+                                "name": "listeners",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "userConfig": {
+                                "fn": "onButtonClick",
+                                "implHandler": [
+                                    "var email = Ext.getCmp('txtLoginEmail').getValue();",
+                                    "var password = Ext.getCmp('txtLoginPassword').getValue();",
+                                    "",
+                                    "if (Ext.getCmp('chkRememberMe').getValue()) {",
+                                    "    var date = new Date();",
+                                    "    date.setTime(date.getTime()+(24*60*60*10000));",
+                                    "    document.cookie = \"remember=\"+email+\"; expires=\" + date.toGMTString();",
+                                    "} else {",
+                                    "    function delete_cookie(name) {",
+                                    "      document.cookie = name +'=; Path=/; Expires=Thu, 01 Jan 1970 00:00:01 GMT;';",
+                                    "    }",
+                                    "    delete_cookie(\"remember\");",
+                                    "}",
+                                    "",
+                                    "Ext.Ajax.request({",
+                                    "    url: '/api/user/login',",
+                                    "    method: \"POST\",",
+                                    "    scope: this,",
+                                    "    params: {",
+                                    "        email: email,",
+                                    "        password: password",
+                                    "    },",
+                                    "    success: function (response, eopts) {",
+                                    "        var obj = Ext.decode(response.responseText);",
+                                    "        if (!obj.success) {",
+                                    "            Ext.Msg.alert(\"Failure\", obj.message);",
+                                    "        } else {",
+                                    "            var form = Ext.create('CrmApp.view.frmMain', {",
+                                    "                renderTo: Ext.getBody()",
+                                    "            });",
+                                    "            Ext.getCmp('frmMain').populateUi();",
+                                    "            this.close();",
+                                    "            if (obj.resetPassword) {",
+                                    "                var window = fetchOrCreate(\"wndResetPassword\");",
+                                    "                window.show();",
+                                    "            }",
+                                    "        }",
+                                    "    }",
+                                    "});"
+                                ],
+                                "name": "click",
+                                "scope": "me"
+                            },
+                            "configAlternates": {
+                                "fn": "string",
+                                "implHandler": "code",
+                                "name": "string",
+                                "scope": "string"
+                            },
+                            "name": "onButtonClick",
+                            "designerId": "6023823d-4075-4338-9c0b-cfb5cb8bc5fd"
+                        }
+                    ]
+                },
+                {
+                    "type": "Ext.button.Button",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "icon": "/images/icons/png/16x16/LightBulb.png",
+                        "layout|x": 50,
+                        "layout|y": 160,
+                        "text": "Forgot Password"
+                    },
+                    "configAlternates": {
+                        "icon": "string",
+                        "layout|x": "number",
+                        "layout|y": "number",
+                        "text": "string"
+                    },
+                    "name": "MyButton31",
+                    "designerId": "131dafbd-cdaf-42a6-b2c0-3271a4e826b1",
+                    "cn": [
+                        {
+                            "type": "basiceventbinding",
+                            "reference": {
+                                "name": "listeners",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "userConfig": {
+                                "fn": "onButtonClick1",
+                                "implHandler": [
+                                    "var email = Ext.getCmp('txtLoginEmail').getValue();",
+                                    "Ext.Ajax.request({",
+                                    "    url: '/api/user/password/reminder',",
+                                    "    method: \"POST\",",
+                                    "    scope: this,",
+                                    "    params: {",
+                                    "        email: email",
+                                    "    },",
+                                    "    success: function (response, eopts) {",
+                                    "        var obj = Ext.decode(response.responseText);",
+                                    "        if (!obj.success) {",
+                                    "            Ext.Msg.alert(\"Failure\", \"Your email address was not found in the database\");",
+                                    "        } else {",
+                                    "            Ext.Msg.alert(\"Success\", \"Your email has been forwarded your new password\");",
+                                    "        }",
+                                    "    }",
+                                    "});"
+                                ],
+                                "name": "click",
+                                "scope": "me"
+                            },
+                            "configAlternates": {
+                                "fn": "string",
+                                "implHandler": "code",
+                                "name": "string",
+                                "scope": "string"
+                            },
+                            "name": "onButtonClick1",
+                            "designerId": "c027ae69-7c1a-43b1-84cb-3479124dd468"
+                        }
+                    ]
+                },
+                {
+                    "type": "Ext.Img",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "height": 57,
+                        "layout|x": 80,
+                        "layout|y": 10,
+                        "src": "/images/logo.svg",
+                        "width": 160
+                    },
+                    "configAlternates": {
+                        "height": "auto",
+                        "layout|x": "number",
+                        "layout|y": "number",
+                        "src": "uri",
+                        "width": "auto"
+                    },
+                    "name": "MyImg",
+                    "designerId": "758947ae-ab25-45fe-8ead-258eb78bd25d"
+                }
+            ]
+        }
+    ]
+}

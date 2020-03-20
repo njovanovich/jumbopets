@@ -1,0 +1,51 @@
+{
+    "name": "JumboPets",
+    "settings": {
+        "cmd": {
+            "license": "commercial",
+            "cmdVersion": "7.0.0.40",
+            "frameworkVersion": "6.6.0.258"
+        },
+        "urlPrefixTemplate": "http://localhost:{port}/{path}",
+        "urlPrefix": "http://localhost:61510/",
+        "exportPath": "W:/jumbopets/htmljs",
+        "buildShouldOverwriteIndex": true,
+        "generateArchitectVersion": true,
+        "spacesToIndent": 4,
+        "lineEnding": "CRLF",
+        "genTimestamps": false,
+        "cacheBust": false,
+        "installStatus": "Not Installed",
+        "canvasControls": {
+            "viewportSize": {
+                "name": "Auto Expand",
+                "builtIn": true,
+                "height": null,
+                "width": null
+            }
+        },
+        "sdkPath": ""
+    },
+    "xdsVersion": "4.2.6",
+    "xdsBuild": 425,
+    "schemaVersion": 1,
+    "upgradeVersion": 310000000001,
+    "framework": "ext66",
+    "viewOrderMap": {
+        "view": [
+            "da6f5047-0be2-48f5-9ab9-c8332aefb9d9",
+            "4e7d7746-1cec-45bb-a9b1-ddba6c7d89fb",
+            "d100cdfa-c738-4938-8225-ff1fb41df639"
+        ],
+        "store": [],
+        "controller": [],
+        "model": [],
+        "resource": [
+            "0f849e21-7287-404b-bdee-ba3a7f8f93f1",
+            "8d0d8e00-8e8d-4e67-8f94-63be02ffd918"
+        ],
+        "app": [
+            "application"
+        ]
+    }
+}
