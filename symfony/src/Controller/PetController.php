@@ -9,7 +9,7 @@ class PetController extends AbstractController
 {
     /**
      * Uploads an image of the pet
-     * @Route("/pet/{petId}/uploadImage", name="pet", methods={POST})
+     * @Route("/pet/{petId}/uploadImage", name="pet", methods={"POST"})
      */
     public function index()
     {
@@ -22,7 +22,7 @@ class PetController extends AbstractController
 
     /**
      * Add a new pet to the store
-     * @Route("/pet", name="pet_add", methods={POST})
+     * @Route("/pet", name="pet_add", methods={"POST"})
      */
     public function petAdd()
     {
@@ -40,7 +40,7 @@ class PetController extends AbstractController
 
     /**
      * Update an existing pet
-     * @Route("/pet", name="pet_edit", methods={PUT})
+     * @Route("/pet", name="pet_edit", methods={"PUT"})
      */
     public function petEdit()
     {
@@ -56,7 +56,7 @@ class PetController extends AbstractController
 
     /**
      * Finds Pets by status
-     * @Route("/pet/findByStatus", name="pet_find_by_status", methods={GTET})
+     * @Route("/pet/findByStatus", name="pet_find_by_status", methods={"GET"})
      */
     public function petFindByStatus()
     {
@@ -72,7 +72,7 @@ class PetController extends AbstractController
 
     /**
      * Find Pet by id
-     * @Route("/pet/{petId}", name="pet_find_by_id", methods={GET})
+     * @Route("/pet/{petId}", name="pet_find_by_id", methods={"GET"})
      */
     public function petFindById()
     {
@@ -88,7 +88,7 @@ class PetController extends AbstractController
 
     /**
      * Updates a pet in the store with form data
-     * @Route("/pet/{petId}", name="pet_update", methods={POST})
+     * @Route("/pet/{petId}", name="pet_update", methods={"POST"})
      */
     public function petUpdate()
     {
@@ -106,7 +106,7 @@ class PetController extends AbstractController
 
     /**
      * Deletes a pet
-     * @Route("/pet/{petId}", name="pet_delete", methods={DELETE})
+     * @Route("/pet/{petId}", name="pet_delete", methods={"DELETE"})
      */
     public function petDelete()
     {

@@ -128,12 +128,11 @@ class User
     }
 
     /**
-     * @return null
-     * do not return a password, not needed, keep hash secure
+     * @return string
      */
     public function getPassword(): string
     {
-        return NULL;
+        return $this->password;
     }
 
     /**

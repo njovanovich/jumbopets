@@ -12,7 +12,7 @@ class UserController extends AbstractController
 {
     /**
      * Creates list of users with given input array
-     * @Route("/user/createWithArray", name="user_create_with_array",methods={POST})
+     * @Route("/user/createWithArray", name="user_create_with_array",methods={"POST"})
      */
     public function createWithArray()
     {
@@ -24,7 +24,7 @@ class UserController extends AbstractController
 
     /**
      * Creates list of users with given input array
-     * @Route("/user/createWithList", name="user_create_with_list",methods={POST})
+     * @Route("/user/createWithList", name="user_create_with_list",methods={"POST"})
      */
     public function createWithList()
     {
@@ -36,7 +36,7 @@ class UserController extends AbstractController
 
     /**
      * Get user by user name
-     * @Route("/user/{username}}", name="user_get_by_name",methods={GET})
+     * @Route("/user/{username}}", name="user_get_by_name",methods={"GET"})
      */
     public function getByUsername()
     {
@@ -48,7 +48,7 @@ class UserController extends AbstractController
 
     /**
      * Updated username
-     * @Route("/user/{username}}", name="user_update_username",methods={PUT})
+     * @Route("/user/{username}}", name="user_update_username",methods={"PUT"})
      */
     public function updateUsername()
     {
@@ -60,7 +60,7 @@ class UserController extends AbstractController
 
     /**
      * Delete username
-     * @Route("/user/{username}}", name="user_delete",methods={DELETE})
+     * @Route("/user/{username}}", name="user_delete",methods={"DELETE"})
      */
     public function deleteByUsername()
     {
@@ -73,7 +73,7 @@ class UserController extends AbstractController
 
     /**
      * Logs user into the system
-     * @Route("/user/login", name="user_login",methods={GET})
+     * @Route("/user/login", name="user_login",methods={"GET"})
      * Wouldnt this be more secure as a POST ?
      */
     public function userLogin(Request $request)
@@ -104,7 +104,7 @@ class UserController extends AbstractController
 
     /**
      * Logs out current logged in user session
-     * @Route("/user/logout}", name="user_logout",methods={GET})
+     * @Route("/user/logout}", name="user_logout",methods={"GET"})
      */
     public function userLogout()
     {
@@ -116,7 +116,7 @@ class UserController extends AbstractController
 
     /**
      * Logs user into the system
-     * @Route("/user", name="user_create",methods={POST})
+     * @Route("/user", name="user_create",methods={"POST"})
      * This can only be done by the logged in user.
      */
     public function userCreate()

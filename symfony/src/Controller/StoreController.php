@@ -9,7 +9,7 @@ class StoreController extends AbstractController
 {
     /**
      * Place an order for a pet
-     * @Route("/store/order", name="store_order",methods={POST})
+     * @Route("/store/order", name="store_order",methods={"POST"})
      */
     public function storeOrder()
     {
@@ -21,7 +21,7 @@ class StoreController extends AbstractController
 
     /**
      * Find purchase order by ID
-     * @Route("/store/order/orderId", name="store_get_order",methods={GET})
+     * @Route("/store/order/orderId", name="store_get_order",methods={"GET"})
      */
     public function storeGetOrder()
     {
@@ -33,7 +33,9 @@ class StoreController extends AbstractController
 
     /**
      * Delete purchase order by ID
-     * @Route("/store/order/orderId", name="store_delete_order",methods={DELETE})
+     * @Route("/store/order/orderId", name="store_delete_order",methods={"DELETE"})
+     *
+     *
      */
     public function storeDeleteOrder()
     {
@@ -45,7 +47,7 @@ class StoreController extends AbstractController
 
     /**
      * Returns pet inventories by status
-     * @Route("/store/inventory", name="store_inventory",methods={GET})
+     * @Route("/store/inventory", name="store_inventory",methods={"GET"})
      */
     public function storeGetInventory()
     {
