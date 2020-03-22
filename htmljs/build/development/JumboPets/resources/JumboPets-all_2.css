@@ -1,3 +1,358 @@
+/* W:/jumbopets/xds/JumboPets/ext/classic/theme-base/sass/etc/mixins/frame.scss:187 */
+.x-tab-default-top {
+    -moz-border-radius-topleft: 4px;
+    -webkit-border-top-left-radius: 4px;
+    border-top-left-radius: 4px;
+    -moz-border-radius-topright: 4px;
+    -webkit-border-top-right-radius: 4px;
+    border-top-right-radius: 4px;
+    -moz-border-radius-bottomright: 0;
+    -webkit-border-bottom-right-radius: 0;
+    border-bottom-right-radius: 0;
+    -moz-border-radius-bottomleft: 0;
+    -webkit-border-bottom-left-radius: 0;
+    border-bottom-left-radius: 0;
+    padding: 3px 9px 3px 9px;
+    border-width: 1px 1px 0;
+    border-style: solid;
+    background-image: none;
+    background-color: #deecfd;
+    background-image: -webkit-gradient(linear, top, bottom, color-stop(0%, #ccdef6), color-stop(25%, #d6e6fa), color-stop(45%, #deecfd));
+    background-image: -webkit-linear-gradient(top, #ccdef6, #d6e6fa 25%, #deecfd 45%);
+    background-image: -moz-linear-gradient(top, #ccdef6, #d6e6fa 25%, #deecfd 45%);
+    background-image: -o-linear-gradient(top, #ccdef6, #d6e6fa 25%, #deecfd 45%);
+    background-image: -ms-linear-gradient(top, #ccdef6, #d6e6fa 25%, #deecfd 45%);
+    background-image: linear-gradient(top, #ccdef6, #d6e6fa 25%, #deecfd 45%);
+}
+/* W:/jumbopets/xds/JumboPets/ext/classic/theme-base/sass/etc/mixins/frame.scss:237 */
+.x-tab-default-top-mc {
+    background-image: url(images/tab/tab-default-top-fbg.gif);
+    background-position: 0 top;
+    background-color: #deecfd;
+}
+/* W:/jumbopets/xds/JumboPets/ext/classic/theme-base/sass/etc/mixins/frame.scss:264 */
+.x-nbr .x-tab-default-top {
+    padding: 0 !important;
+    border-width: 0 !important;
+    -webkit-border-radius: 0px;
+    -moz-border-radius: 0px;
+    -ms-border-radius: 0px;
+    -o-border-radius: 0px;
+    border-radius: 0px;
+    background-color: transparent !important;
+    background-image: none;
+    box-shadow: none !important;
+}
+/* W:/jumbopets/xds/JumboPets/ext/classic/theme-base/sass/etc/mixins/frame.scss:281 */
+.x-tab-default-top-frameInfo {
+    font-family: th-4-4-0-4-1-1-0-1-3-9-3-9;
+}
+/* W:/jumbopets/xds/JumboPets/ext/classic/theme-base/sass/etc/mixins/frame.scss:347 */
+.x-tab-default-top-tl {
+    background-position: 0 -8px;
+}
+/* W:/jumbopets/xds/JumboPets/ext/classic/theme-base/sass/etc/mixins/frame.scss:351 */
+.x-tab-default-top-tr {
+    background-position: right -12px;
+}
+/* W:/jumbopets/xds/JumboPets/ext/classic/theme-base/sass/etc/mixins/frame.scss:355 */
+.x-tab-default-top-bl {
+    background-position: 0 -16px;
+}
+/* W:/jumbopets/xds/JumboPets/ext/classic/theme-base/sass/etc/mixins/frame.scss:359 */
+.x-tab-default-top-br {
+    background-position: right -20px;
+}
+/* W:/jumbopets/xds/JumboPets/ext/classic/theme-base/sass/etc/mixins/frame.scss:363 */
+.x-tab-default-top-ml {
+    background-position: 0 top;
+}
+/* W:/jumbopets/xds/JumboPets/ext/classic/theme-base/sass/etc/mixins/frame.scss:371 */
+.x-tab-default-top-mr {
+    background-position: right top;
+}
+/* W:/jumbopets/xds/JumboPets/ext/classic/theme-base/sass/etc/mixins/frame.scss:379 */
+.x-tab-default-top-tc {
+    background-position: 0 0;
+}
+/* W:/jumbopets/xds/JumboPets/ext/classic/theme-base/sass/etc/mixins/frame.scss:383 */
+.x-tab-default-top-bc {
+    background-position: 0 -4px;
+}
+/* W:/jumbopets/xds/JumboPets/ext/classic/theme-base/sass/etc/mixins/frame.scss:388 */
+.x-tab-default-top-tr,
+.x-tab-default-top-br,
+.x-tab-default-top-mr {
+    padding-right: 4px;
+}
+/* W:/jumbopets/xds/JumboPets/ext/classic/theme-base/sass/etc/mixins/frame.scss:394 */
+.x-tab-default-top-tl,
+.x-tab-default-top-bl,
+.x-tab-default-top-ml {
+    padding-left: 4px;
+}
+/* W:/jumbopets/xds/JumboPets/ext/classic/theme-base/sass/etc/mixins/frame.scss:400 */
+.x-tab-default-top-tc {
+    height: 4px;
+}
+/* W:/jumbopets/xds/JumboPets/ext/classic/theme-base/sass/etc/mixins/frame.scss:403 */
+.x-tab-default-top-bc {
+    height: 0;
+}
+/* W:/jumbopets/xds/JumboPets/ext/classic/theme-base/sass/etc/mixins/frame.scss:407 */
+.x-tab-default-top-tl,
+.x-tab-default-top-bl,
+.x-tab-default-top-tr,
+.x-tab-default-top-br,
+.x-tab-default-top-tc,
+.x-tab-default-top-bc,
+.x-tab-default-top-ml,
+.x-tab-default-top-mr {
+    background-image: url(images/tab/tab-default-top-corners.gif);
+}
+/* W:/jumbopets/xds/JumboPets/ext/classic/theme-base/sass/etc/mixins/frame.scss:453 */
+.x-tab-default-top-ml,
+.x-tab-default-top-mr {
+    background-image: url(images/tab/tab-default-top-sides.gif);
+}
+/* W:/jumbopets/xds/JumboPets/ext/classic/theme-base/sass/etc/mixins/frame.scss:464 */
+.x-tab-default-top-mc {
+    padding: 0px 6px 3px 6px;
+}
+/* W:/jumbopets/xds/JumboPets/ext/classic/theme-base/sass/etc/mixins/slicer.scss:83 */
+.x-cmd-slicer.x-tab-default-top:before {
+    /*<if slicer>*/
+    display: none;
+    content: "x-slicer:, stretch:bottom, frame:4px 4px 0 4px, frame-bg:url(images/tab/tab-default-top-fbg.gif), corners:url(images/tab/tab-default-top-corners.gif), sides:url(images/tab/tab-default-top-sides.gif)" !important;
+}
+/* W:/jumbopets/xds/JumboPets/ext/classic/theme-base/sass/etc/mixins/frame.scss:187 */
+.x-tab-default-bottom {
+    -moz-border-radius-topleft: 0;
+    -webkit-border-top-left-radius: 0;
+    border-top-left-radius: 0;
+    -moz-border-radius-topright: 0;
+    -webkit-border-top-right-radius: 0;
+    border-top-right-radius: 0;
+    -moz-border-radius-bottomright: 4px;
+    -webkit-border-bottom-right-radius: 4px;
+    border-bottom-right-radius: 4px;
+    -moz-border-radius-bottomleft: 4px;
+    -webkit-border-bottom-left-radius: 4px;
+    border-bottom-left-radius: 4px;
+    padding: 4px 9px 3px 9px;
+    border-width: 0 1px 1px 1px;
+    border-style: solid;
+    background-image: none;
+    background-color: #deecfd;
+    background-image: -webkit-gradient(linear, top, bottom, color-stop(0%, #ccdef6), color-stop(25%, #d6e6fa), color-stop(45%, #deecfd));
+    background-image: -webkit-linear-gradient(bottom, #ccdef6, #d6e6fa 25%, #deecfd 45%);
+    background-image: -moz-linear-gradient(bottom, #ccdef6, #d6e6fa 25%, #deecfd 45%);
+    background-image: -o-linear-gradient(bottom, #ccdef6, #d6e6fa 25%, #deecfd 45%);
+    background-image: -ms-linear-gradient(bottom, #ccdef6, #d6e6fa 25%, #deecfd 45%);
+    background-image: linear-gradient(bottom, #ccdef6, #d6e6fa 25%, #deecfd 45%);
+}
+/* W:/jumbopets/xds/JumboPets/ext/classic/theme-base/sass/etc/mixins/frame.scss:237 */
+.x-tab-default-bottom-mc {
+    background-image: url(images/tab/tab-default-bottom-fbg.gif);
+    background-position: 0 bottom;
+    background-color: #deecfd;
+}
+/* W:/jumbopets/xds/JumboPets/ext/classic/theme-base/sass/etc/mixins/frame.scss:264 */
+.x-nbr .x-tab-default-bottom {
+    padding: 0 !important;
+    border-width: 0 !important;
+    -webkit-border-radius: 0px;
+    -moz-border-radius: 0px;
+    -ms-border-radius: 0px;
+    -o-border-radius: 0px;
+    border-radius: 0px;
+    background-color: transparent !important;
+    background-image: none;
+    box-shadow: none !important;
+}
+/* W:/jumbopets/xds/JumboPets/ext/classic/theme-base/sass/etc/mixins/frame.scss:281 */
+.x-tab-default-bottom-frameInfo {
+    font-family: th-4-4-4-4-0-1-1-1-4-9-3-9;
+}
+/* W:/jumbopets/xds/JumboPets/ext/classic/theme-base/sass/etc/mixins/frame.scss:347 */
+.x-tab-default-bottom-tl {
+    background-position: 0 -8px;
+}
+/* W:/jumbopets/xds/JumboPets/ext/classic/theme-base/sass/etc/mixins/frame.scss:351 */
+.x-tab-default-bottom-tr {
+    background-position: right -12px;
+}
+/* W:/jumbopets/xds/JumboPets/ext/classic/theme-base/sass/etc/mixins/frame.scss:355 */
+.x-tab-default-bottom-bl {
+    background-position: 0 -16px;
+}
+/* W:/jumbopets/xds/JumboPets/ext/classic/theme-base/sass/etc/mixins/frame.scss:359 */
+.x-tab-default-bottom-br {
+    background-position: right -20px;
+}
+/* W:/jumbopets/xds/JumboPets/ext/classic/theme-base/sass/etc/mixins/frame.scss:363 */
+.x-tab-default-bottom-ml {
+    background-position: 0 bottom;
+}
+/* W:/jumbopets/xds/JumboPets/ext/classic/theme-base/sass/etc/mixins/frame.scss:371 */
+.x-tab-default-bottom-mr {
+    background-position: right bottom;
+}
+/* W:/jumbopets/xds/JumboPets/ext/classic/theme-base/sass/etc/mixins/frame.scss:379 */
+.x-tab-default-bottom-tc {
+    background-position: 0 0;
+}
+/* W:/jumbopets/xds/JumboPets/ext/classic/theme-base/sass/etc/mixins/frame.scss:383 */
+.x-tab-default-bottom-bc {
+    background-position: 0 -4px;
+}
+/* W:/jumbopets/xds/JumboPets/ext/classic/theme-base/sass/etc/mixins/frame.scss:388 */
+.x-tab-default-bottom-tr,
+.x-tab-default-bottom-br,
+.x-tab-default-bottom-mr {
+    padding-right: 4px;
+}
+/* W:/jumbopets/xds/JumboPets/ext/classic/theme-base/sass/etc/mixins/frame.scss:394 */
+.x-tab-default-bottom-tl,
+.x-tab-default-bottom-bl,
+.x-tab-default-bottom-ml {
+    padding-left: 4px;
+}
+/* W:/jumbopets/xds/JumboPets/ext/classic/theme-base/sass/etc/mixins/frame.scss:400 */
+.x-tab-default-bottom-tc {
+    height: 4px;
+}
+/* W:/jumbopets/xds/JumboPets/ext/classic/theme-base/sass/etc/mixins/frame.scss:403 */
+.x-tab-default-bottom-bc {
+    height: 4px;
+}
+/* W:/jumbopets/xds/JumboPets/ext/classic/theme-base/sass/etc/mixins/frame.scss:407 */
+.x-tab-default-bottom-tl,
+.x-tab-default-bottom-bl,
+.x-tab-default-bottom-tr,
+.x-tab-default-bottom-br,
+.x-tab-default-bottom-tc,
+.x-tab-default-bottom-bc,
+.x-tab-default-bottom-ml,
+.x-tab-default-bottom-mr {
+    background-image: url(images/tab/tab-default-bottom-corners.gif);
+}
+/* W:/jumbopets/xds/JumboPets/ext/classic/theme-base/sass/etc/mixins/frame.scss:453 */
+.x-tab-default-bottom-ml,
+.x-tab-default-bottom-mr {
+    background-image: url(images/tab/tab-default-bottom-sides.gif);
+}
+/* W:/jumbopets/xds/JumboPets/ext/classic/theme-base/sass/etc/mixins/frame.scss:464 */
+.x-tab-default-bottom-mc {
+    padding: 0px 6px 0px 6px;
+}
+/* W:/jumbopets/xds/JumboPets/ext/classic/theme-base/sass/etc/mixins/slicer.scss:83 */
+.x-cmd-slicer.x-tab-default-bottom:before {
+    /*<if slicer>*/
+    display: none;
+    content: "x-slicer:, stretch:top, frame:4px 4px 4px 4px, frame-bg:url(images/tab/tab-default-bottom-fbg.gif), corners:url(images/tab/tab-default-bottom-corners.gif), sides:url(images/tab/tab-default-bottom-sides.gif)" !important;
+}
+/* W:/jumbopets/xds/JumboPets/ext/classic/theme-base/sass/etc/mixins/frame.scss:187 */
+.x-tab-default-left {
+    -moz-border-radius-topleft: 4px;
+    -webkit-border-top-left-radius: 4px;
+    border-top-left-radius: 4px;
+    -moz-border-radius-topright: 0;
+    -webkit-border-top-right-radius: 0;
+    border-top-right-radius: 0;
+    -moz-border-radius-bottomright: 0;
+    -webkit-border-bottom-right-radius: 0;
+    border-bottom-right-radius: 0;
+    -moz-border-radius-bottomleft: 4px;
+    -webkit-border-bottom-left-radius: 4px;
+    border-bottom-left-radius: 4px;
+    padding: 3px 9px 3px 9px;
+    border-width: 1px 0 1px 1px;
+    border-style: solid;
+    background-image: none;
+    background-color: #deecfd;
+    background-image: -webkit-gradient(linear, top, bottom, color-stop(0%, #ccdef6), color-stop(25%, #d6e6fa), color-stop(45%, #deecfd));
+    background-image: -webkit-linear-gradient(top, #ccdef6, #d6e6fa 25%, #deecfd 45%);
+    background-image: -moz-linear-gradient(top, #ccdef6, #d6e6fa 25%, #deecfd 45%);
+    background-image: -o-linear-gradient(top, #ccdef6, #d6e6fa 25%, #deecfd 45%);
+    background-image: -ms-linear-gradient(top, #ccdef6, #d6e6fa 25%, #deecfd 45%);
+    background-image: linear-gradient(top, #ccdef6, #d6e6fa 25%, #deecfd 45%);
+}
+/* W:/jumbopets/xds/JumboPets/ext/classic/theme-base/sass/etc/mixins/frame.scss:237 */
+.x-tab-default-left-mc {
+    background-image: url(images/tab/tab-default-left-fbg.gif);
+    background-position: 0 top;
+    background-color: #deecfd;
+}
+/* W:/jumbopets/xds/JumboPets/ext/classic/theme-base/sass/etc/mixins/frame.scss:264 */
+.x-nbr .x-tab-default-left {
+    padding: 0 !important;
+    border-width: 0 !important;
+    -webkit-border-radius: 0px;
+    -moz-border-radius: 0px;
+    -ms-border-radius: 0px;
+    -o-border-radius: 0px;
+    border-radius: 0px;
+    background-color: transparent !important;
+    background-image: none;
+    box-shadow: none !important;
+}
+/* W:/jumbopets/xds/JumboPets/ext/classic/theme-base/sass/etc/mixins/frame.scss:281 */
+.x-tab-default-left-frameInfo {
+    font-family: th-4-4-4-4-1-0-1-1-3-9-3-9;
+}
+/* W:/jumbopets/xds/JumboPets/ext/classic/theme-base/sass/etc/mixins/frame.scss:347 */
+.x-tab-default-left-tl {
+    background-position: 0 -8px;
+}
+/* W:/jumbopets/xds/JumboPets/ext/classic/theme-base/sass/etc/mixins/frame.scss:351 */
+.x-tab-default-left-tr {
+    background-position: right -12px;
+}
+/* W:/jumbopets/xds/JumboPets/ext/classic/theme-base/sass/etc/mixins/frame.scss:355 */
+.x-tab-default-left-bl {
+    background-position: 0 -16px;
+}
+/* W:/jumbopets/xds/JumboPets/ext/classic/theme-base/sass/etc/mixins/frame.scss:359 */
+.x-tab-default-left-br {
+    background-position: right -20px;
+}
+/* W:/jumbopets/xds/JumboPets/ext/classic/theme-base/sass/etc/mixins/frame.scss:363 */
+.x-tab-default-left-ml {
+    background-position: 0 top;
+}
+/* W:/jumbopets/xds/JumboPets/ext/classic/theme-base/sass/etc/mixins/frame.scss:371 */
+.x-tab-default-left-mr {
+    background-position: right top;
+}
+/* W:/jumbopets/xds/JumboPets/ext/classic/theme-base/sass/etc/mixins/frame.scss:379 */
+.x-tab-default-left-tc {
+    background-position: 0 0;
+}
+/* W:/jumbopets/xds/JumboPets/ext/classic/theme-base/sass/etc/mixins/frame.scss:383 */
+.x-tab-default-left-bc {
+    background-position: 0 -4px;
+}
+/* W:/jumbopets/xds/JumboPets/ext/classic/theme-base/sass/etc/mixins/frame.scss:388 */
+.x-tab-default-left-tr,
+.x-tab-default-left-br,
+.x-tab-default-left-mr {
+    padding-right: 4px;
+}
+/* W:/jumbopets/xds/JumboPets/ext/classic/theme-base/sass/etc/mixins/frame.scss:394 */
+.x-tab-default-left-tl,
+.x-tab-default-left-bl,
+.x-tab-default-left-ml {
+    padding-left: 4px;
+}
+/* W:/jumbopets/xds/JumboPets/ext/classic/theme-base/sass/etc/mixins/frame.scss:400 */
+.x-tab-default-left-tc {
+    height: 4px;
+}
+/* W:/jumbopets/xds/JumboPets/ext/classic/theme-base/sass/etc/mixins/frame.scss:403 */
+.x-tab-default-left-bc {
+    height: 4px;
+}
 /* W:/jumbopets/xds/JumboPets/ext/classic/theme-base/sass/etc/mixins/frame.scss:407 */
 .x-tab-default-left-tl,
 .x-tab-default-left-bl,
@@ -17,6 +372,12 @@
 /* W:/jumbopets/xds/JumboPets/ext/classic/theme-base/sass/etc/mixins/frame.scss:464 */
 .x-tab-default-left-mc {
     padding: 0px 5px 0px 6px;
+}
+/* W:/jumbopets/xds/JumboPets/ext/classic/theme-base/sass/etc/mixins/slicer.scss:83 */
+.x-cmd-slicer.x-tab-default-left:before {
+    /*<if slicer>*/
+    display: none;
+    content: "x-slicer:, stretch:bottom, frame:4px 4px 4px 4px, frame-bg:url(images/tab/tab-default-left-fbg.gif), corners:url(images/tab/tab-default-left-corners.gif), sides:url(images/tab/tab-default-left-sides.gif)" !important;
 }
 /* W:/jumbopets/xds/JumboPets/ext/classic/theme-base/sass/etc/mixins/frame.scss:187 */
 .x-tab-default-right {
@@ -138,6 +499,12 @@
 /* W:/jumbopets/xds/JumboPets/ext/classic/theme-base/sass/etc/mixins/frame.scss:464 */
 .x-tab-default-right-mc {
     padding: 0px 6px 0px 5px;
+}
+/* W:/jumbopets/xds/JumboPets/ext/classic/theme-base/sass/etc/mixins/slicer.scss:83 */
+.x-cmd-slicer.x-tab-default-right:before {
+    /*<if slicer>*/
+    display: none;
+    content: "x-slicer:, stretch:bottom, frame:4px 4px 4px 4px, frame-bg:url(images/tab/tab-default-right-fbg.gif), corners:url(images/tab/tab-default-right-corners.gif), sides:url(images/tab/tab-default-right-sides.gif)" !important;
 }
 /* W:/jumbopets/xds/JumboPets/ext/classic/theme-neutral/sass/var/tab/Tab.scss:2672 */
 .x-tab-default {
@@ -1040,6 +1407,150 @@
     padding-right: 0px;
     padding-left: 14px;
 }
+/* W:/jumbopets/xds/JumboPets/ext/classic/theme-base/sass/etc/mixins/slicer.scss:83 */
+.x-cmd-slicer.x-tab-focus.x-tab-default-top:before {
+    /*<if slicer>*/
+    display: none;
+    content: "x-slicer:, corners:url(images/tab/tab-default-top-focus-corners.gif), sides:url(images/tab/tab-default-top-focus-sides.gif), frame-bg:url(images/tab/tab-default-top-focus-fbg.gif), frame:4px 4px 4px 4px, stretch:bottom" !important;
+}
+/* W:/jumbopets/xds/JumboPets/ext/classic/theme-base/sass/etc/mixins/slicer.scss:83 */
+.x-cmd-slicer.x-tab-focus.x-tab-default-right:before {
+    /*<if slicer>*/
+    display: none;
+    content: "x-slicer:, corners:url(images/tab/tab-default-right-focus-corners.gif), sides:url(images/tab/tab-default-right-focus-sides.gif), frame-bg:url(images/tab/tab-default-right-focus-fbg.gif), frame:4px 4px 4px 4px, stretch:left" !important;
+}
+/* W:/jumbopets/xds/JumboPets/ext/classic/theme-base/sass/etc/mixins/slicer.scss:83 */
+.x-cmd-slicer.x-tab-focus.x-tab-default-bottom:before {
+    /*<if slicer>*/
+    display: none;
+    content: "x-slicer:, corners:url(images/tab/tab-default-bottom-focus-corners.gif), sides:url(images/tab/tab-default-bottom-focus-sides.gif), frame-bg:url(images/tab/tab-default-bottom-focus-fbg.gif), frame:4px 4px 4px 4px, stretch:top" !important;
+}
+/* W:/jumbopets/xds/JumboPets/ext/classic/theme-base/sass/etc/mixins/slicer.scss:83 */
+.x-cmd-slicer.x-tab-focus.x-tab-default-left:before {
+    /*<if slicer>*/
+    display: none;
+    content: "x-slicer:, corners:url(images/tab/tab-default-left-focus-corners.gif), sides:url(images/tab/tab-default-left-focus-sides.gif), frame-bg:url(images/tab/tab-default-left-focus-fbg.gif), frame:4px 4px 4px 4px, stretch:right" !important;
+}
+/* W:/jumbopets/xds/JumboPets/ext/classic/theme-base/sass/etc/mixins/slicer.scss:83 */
+.x-cmd-slicer.x-tab-over.x-tab-default-top:before {
+    /*<if slicer>*/
+    display: none;
+    content: "x-slicer:, corners:url(images/tab/tab-default-top-over-corners.gif), sides:url(images/tab/tab-default-top-over-sides.gif), frame-bg:url(images/tab/tab-default-top-over-fbg.gif), frame:4px 4px 4px 4px, stretch:bottom" !important;
+}
+/* W:/jumbopets/xds/JumboPets/ext/classic/theme-base/sass/etc/mixins/slicer.scss:83 */
+.x-cmd-slicer.x-tab-over.x-tab-default-right:before {
+    /*<if slicer>*/
+    display: none;
+    content: "x-slicer:, corners:url(images/tab/tab-default-right-over-corners.gif), sides:url(images/tab/tab-default-right-over-sides.gif), frame-bg:url(images/tab/tab-default-right-over-fbg.gif), frame:4px 4px 4px 4px, stretch:left" !important;
+}
+/* W:/jumbopets/xds/JumboPets/ext/classic/theme-base/sass/etc/mixins/slicer.scss:83 */
+.x-cmd-slicer.x-tab-over.x-tab-default-bottom:before {
+    /*<if slicer>*/
+    display: none;
+    content: "x-slicer:, corners:url(images/tab/tab-default-bottom-over-corners.gif), sides:url(images/tab/tab-default-bottom-over-sides.gif), frame-bg:url(images/tab/tab-default-bottom-over-fbg.gif), frame:4px 4px 4px 4px, stretch:top" !important;
+}
+/* W:/jumbopets/xds/JumboPets/ext/classic/theme-base/sass/etc/mixins/slicer.scss:83 */
+.x-cmd-slicer.x-tab-over.x-tab-default-left:before {
+    /*<if slicer>*/
+    display: none;
+    content: "x-slicer:, corners:url(images/tab/tab-default-left-over-corners.gif), sides:url(images/tab/tab-default-left-over-sides.gif), frame-bg:url(images/tab/tab-default-left-over-fbg.gif), frame:4px 4px 4px 4px, stretch:right" !important;
+}
+/* W:/jumbopets/xds/JumboPets/ext/classic/theme-base/sass/etc/mixins/slicer.scss:83 */
+.x-cmd-slicer.x-tab-active.x-tab-default-top:before {
+    /*<if slicer>*/
+    display: none;
+    content: "x-slicer:, corners:url(images/tab/tab-default-top-active-corners.gif), sides:url(images/tab/tab-default-top-active-sides.gif), frame-bg:url(images/tab/tab-default-top-active-fbg.gif), frame:4px 4px 4px 4px, stretch:bottom" !important;
+}
+/* W:/jumbopets/xds/JumboPets/ext/classic/theme-base/sass/etc/mixins/slicer.scss:83 */
+.x-cmd-slicer.x-tab-active.x-tab-default-right:before {
+    /*<if slicer>*/
+    display: none;
+    content: "x-slicer:, corners:url(images/tab/tab-default-right-active-corners.gif), sides:url(images/tab/tab-default-right-active-sides.gif), frame-bg:url(images/tab/tab-default-right-active-fbg.gif), frame:4px 4px 4px 4px, stretch:left" !important;
+}
+/* W:/jumbopets/xds/JumboPets/ext/classic/theme-base/sass/etc/mixins/slicer.scss:83 */
+.x-cmd-slicer.x-tab-active.x-tab-default-bottom:before {
+    /*<if slicer>*/
+    display: none;
+    content: "x-slicer:, corners:url(images/tab/tab-default-bottom-active-corners.gif), sides:url(images/tab/tab-default-bottom-active-sides.gif), frame-bg:url(images/tab/tab-default-bottom-active-fbg.gif), frame:4px 4px 4px 4px, stretch:top" !important;
+}
+/* W:/jumbopets/xds/JumboPets/ext/classic/theme-base/sass/etc/mixins/slicer.scss:83 */
+.x-cmd-slicer.x-tab-active.x-tab-default-left:before {
+    /*<if slicer>*/
+    display: none;
+    content: "x-slicer:, corners:url(images/tab/tab-default-left-active-corners.gif), sides:url(images/tab/tab-default-left-active-sides.gif), frame-bg:url(images/tab/tab-default-left-active-fbg.gif), frame:4px 4px 4px 4px, stretch:right" !important;
+}
+/* W:/jumbopets/xds/JumboPets/ext/classic/theme-base/sass/etc/mixins/slicer.scss:83 */
+.x-cmd-slicer.x-tab-focus.x-tab-over.x-tab-default-top:before {
+    /*<if slicer>*/
+    display: none;
+    content: "x-slicer:, corners:url(images/tab/tab-default-top-focus-over-corners.gif), sides:url(images/tab/tab-default-top-focus-over-sides.gif), frame-bg:url(images/tab/tab-default-top-focus-over-fbg.gif), frame:4px 4px 4px 4px, stretch:bottom" !important;
+}
+/* W:/jumbopets/xds/JumboPets/ext/classic/theme-base/sass/etc/mixins/slicer.scss:83 */
+.x-cmd-slicer.x-tab-focus.x-tab-over.x-tab-default-right:before {
+    /*<if slicer>*/
+    display: none;
+    content: "x-slicer:, corners:url(images/tab/tab-default-right-focus-over-corners.gif), sides:url(images/tab/tab-default-right-focus-over-sides.gif), frame-bg:url(images/tab/tab-default-right-focus-over-fbg.gif), frame:4px 4px 4px 4px, stretch:left" !important;
+}
+/* W:/jumbopets/xds/JumboPets/ext/classic/theme-base/sass/etc/mixins/slicer.scss:83 */
+.x-cmd-slicer.x-tab-focus.x-tab-over.x-tab-default-bottom:before {
+    /*<if slicer>*/
+    display: none;
+    content: "x-slicer:, corners:url(images/tab/tab-default-bottom-focus-over-corners.gif), sides:url(images/tab/tab-default-bottom-focus-over-sides.gif), frame-bg:url(images/tab/tab-default-bottom-focus-over-fbg.gif), frame:4px 4px 4px 4px, stretch:top" !important;
+}
+/* W:/jumbopets/xds/JumboPets/ext/classic/theme-base/sass/etc/mixins/slicer.scss:83 */
+.x-cmd-slicer.x-tab-focus.x-tab-over.x-tab-default-left:before {
+    /*<if slicer>*/
+    display: none;
+    content: "x-slicer:, corners:url(images/tab/tab-default-left-focus-over-corners.gif), sides:url(images/tab/tab-default-left-focus-over-sides.gif), frame-bg:url(images/tab/tab-default-left-focus-over-fbg.gif), frame:4px 4px 4px 4px, stretch:right" !important;
+}
+/* W:/jumbopets/xds/JumboPets/ext/classic/theme-base/sass/etc/mixins/slicer.scss:83 */
+.x-cmd-slicer.x-tab-focus.x-tab-active.x-tab-default-top:before {
+    /*<if slicer>*/
+    display: none;
+    content: "x-slicer:, corners:url(images/tab/tab-default-top-focus-active-corners.gif), sides:url(images/tab/tab-default-top-focus-active-sides.gif), frame-bg:url(images/tab/tab-default-top-focus-active-fbg.gif), frame:4px 4px 4px 4px, stretch:bottom" !important;
+}
+/* W:/jumbopets/xds/JumboPets/ext/classic/theme-base/sass/etc/mixins/slicer.scss:83 */
+.x-cmd-slicer.x-tab-focus.x-tab-active.x-tab-default-right:before {
+    /*<if slicer>*/
+    display: none;
+    content: "x-slicer:, corners:url(images/tab/tab-default-right-focus-active-corners.gif), sides:url(images/tab/tab-default-right-focus-active-sides.gif), frame-bg:url(images/tab/tab-default-right-focus-active-fbg.gif), frame:4px 4px 4px 4px, stretch:left" !important;
+}
+/* W:/jumbopets/xds/JumboPets/ext/classic/theme-base/sass/etc/mixins/slicer.scss:83 */
+.x-cmd-slicer.x-tab-focus.x-tab-active.x-tab-default-bottom:before {
+    /*<if slicer>*/
+    display: none;
+    content: "x-slicer:, corners:url(images/tab/tab-default-bottom-focus-active-corners.gif), sides:url(images/tab/tab-default-bottom-focus-active-sides.gif), frame-bg:url(images/tab/tab-default-bottom-focus-active-fbg.gif), frame:4px 4px 4px 4px, stretch:top" !important;
+}
+/* W:/jumbopets/xds/JumboPets/ext/classic/theme-base/sass/etc/mixins/slicer.scss:83 */
+.x-cmd-slicer.x-tab-focus.x-tab-active.x-tab-default-left:before {
+    /*<if slicer>*/
+    display: none;
+    content: "x-slicer:, corners:url(images/tab/tab-default-left-focus-active-corners.gif), sides:url(images/tab/tab-default-left-focus-active-sides.gif), frame-bg:url(images/tab/tab-default-left-focus-active-fbg.gif), frame:4px 4px 4px 4px, stretch:right" !important;
+}
+/* W:/jumbopets/xds/JumboPets/ext/classic/theme-base/sass/etc/mixins/slicer.scss:83 */
+.x-cmd-slicer.x-tab-disabled.x-tab-default-top:before {
+    /*<if slicer>*/
+    display: none;
+    content: "x-slicer:, corners:url(images/tab/tab-default-top-disabled-corners.gif), sides:url(images/tab/tab-default-top-disabled-sides.gif), frame-bg:url(images/tab/tab-default-top-disabled-fbg.gif), frame:4px 4px 4px 4px, stretch:bottom" !important;
+}
+/* W:/jumbopets/xds/JumboPets/ext/classic/theme-base/sass/etc/mixins/slicer.scss:83 */
+.x-cmd-slicer.x-tab-disabled.x-tab-default-right:before {
+    /*<if slicer>*/
+    display: none;
+    content: "x-slicer:, corners:url(images/tab/tab-default-right-disabled-corners.gif), sides:url(images/tab/tab-default-right-disabled-sides.gif), frame-bg:url(images/tab/tab-default-right-disabled-fbg.gif), frame:4px 4px 4px 4px, stretch:left" !important;
+}
+/* W:/jumbopets/xds/JumboPets/ext/classic/theme-base/sass/etc/mixins/slicer.scss:83 */
+.x-cmd-slicer.x-tab-disabled.x-tab-default-bottom:before {
+    /*<if slicer>*/
+    display: none;
+    content: "x-slicer:, corners:url(images/tab/tab-default-bottom-disabled-corners.gif), sides:url(images/tab/tab-default-bottom-disabled-sides.gif), frame-bg:url(images/tab/tab-default-bottom-disabled-fbg.gif), frame:4px 4px 4px 4px, stretch:top" !important;
+}
+/* W:/jumbopets/xds/JumboPets/ext/classic/theme-base/sass/etc/mixins/slicer.scss:83 */
+.x-cmd-slicer.x-tab-disabled.x-tab-default-left:before {
+    /*<if slicer>*/
+    display: none;
+    content: "x-slicer:, corners:url(images/tab/tab-default-left-disabled-corners.gif), sides:url(images/tab/tab-default-left-disabled-sides.gif), frame-bg:url(images/tab/tab-default-left-disabled-fbg.gif), frame:4px 4px 4px 4px, stretch:right" !important;
+}
 /* W:/jumbopets/xds/JumboPets/ext/classic/theme-neutral/sass/var/tab/Bar.scss:389 */
 .x-tab-bar-default {
     background-color: #cbdbef;
@@ -1425,6 +1936,30 @@
 /* W:/jumbopets/xds/JumboPets/ext/classic/theme-neutral/sass/var/tab/Bar.scss:875 */
 .x-tab-bar-default-right .x-box-scroller-bottom {
     background-image: url(images/tab-bar/default-scroll-bottom-right.gif);
+}
+/* W:/jumbopets/xds/JumboPets/ext/classic/theme-base/sass/etc/mixins/slicer.scss:83 */
+.x-cmd-slicer.x-tab-bar-default-top:before {
+    /*<if slicer>*/
+    display: none;
+    content: "x-slicer:, bg:url(images/tab-bar/tab-bar-default-top-bg.gif), stretch:bottom" !important;
+}
+/* W:/jumbopets/xds/JumboPets/ext/classic/theme-base/sass/etc/mixins/slicer.scss:83 */
+.x-cmd-slicer.x-tab-bar-default-bottom:before {
+    /*<if slicer>*/
+    display: none;
+    content: "x-slicer:, bg:url(images/tab-bar/tab-bar-default-bottom-bg.gif), stretch:top" !important;
+}
+/* W:/jumbopets/xds/JumboPets/ext/classic/theme-base/sass/etc/mixins/slicer.scss:83 */
+.x-cmd-slicer.x-tab-bar-default-left:before {
+    /*<if slicer>*/
+    display: none;
+    content: "x-slicer:, bg:url(images/tab-bar/tab-bar-default-left-bg.gif), stretch:right" !important;
+}
+/* W:/jumbopets/xds/JumboPets/ext/classic/theme-base/sass/etc/mixins/slicer.scss:83 */
+.x-cmd-slicer.x-tab-bar-default-right:before {
+    /*<if slicer>*/
+    display: none;
+    content: "x-slicer:, bg:url(images/tab-bar/tab-bar-default-right-bg.gif), stretch:left" !important;
 }
 /* W:/jumbopets/xds/JumboPets/ext/classic/theme-neutral/sass/var/toolbar/Breadcrumb.scss:406 */
 .x-breadcrumb-btn-default {

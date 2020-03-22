@@ -5,6 +5,7 @@ namespace App\Controller;
 use Symfony\Bundle\FrameworkBundle\Controller\AbstractController;
 use Symfony\Component\HttpFoundation\Request;
 use Symfony\Component\HttpFoundation\Response;
+use Symfony\Component\HttpFoundation\Session\Session;
 use Symfony\Component\Routing\Annotation\Route;
 use App\Entity\User;
 
@@ -87,13 +88,24 @@ class UserController extends AbstractController
 
         // get the user
         $found = $repo->findBy(["username"=>$username]);
-        if ($user=$found[0]) {
+        if (count($found)) {
+
+            $user=$found[0];
+
             // check password
             //if(User::checkPassword($password, $user->getPassword())){
+            // @todo encrypt passwords
             if ($password == $user->getPassword()) {
-                $expiresAfter = "";
-                return $this->json(null,200,[
-                    "X-Expires-After" => $expiresAfter,
+
+                $session = new Session();
+                $session->set("user", $username);
+
+                // send the response with heards
+                date_default_timezone_set("UTC");
+                $datetime = new \DateTime('now + 1 day');
+                $expiresAfterFormatted = $datetime->format('Y-m-d H:i:s e');
+                return new Response("successful operation", 200, [
+                    "X-Expires-After" => $expiresAfterFormatted,
                     "X-Rate-Limit" => 1000 * 1000,
                 ]);
             }
@@ -104,14 +116,13 @@ class UserController extends AbstractController
 
     /**
      * Logs out current logged in user session
-     * @Route("/user/logout}", name="user_logout",methods={"GET"})
+     * @Route("/user/logout", name="user_logout",methods={"GET"})
      */
     public function userLogout()
     {
-        return $this->json([
-            'message' => 'Welcome to your new controller!',
-            'path' => 'src/Controller/UserController.php',
-        ]);
+        $session = new Session();
+        $session->set("user", "");
+        return new Response("successful operation");
     }
 
     /**

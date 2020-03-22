@@ -8,12 +8,12 @@
     "userConfig": {
         "name": "JumboPets",
         "stores": [
-            "strMethods"
+            "strMethods",
+            "strContentType"
         ],
         "views": [
             "wndLogin",
-            "frmMain",
-            "frmBody"
+            "frmMain"
         ]
     },
     "configAlternates": {

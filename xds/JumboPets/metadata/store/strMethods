@@ -28,7 +28,7 @@
             },
             "codeClass": null,
             "userConfig": {
-                "name": "type"
+                "name": "name"
             },
             "configAlternates": {
                 "name": "string"

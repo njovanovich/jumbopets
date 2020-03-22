@@ -21,12 +21,12 @@ Ext.Loader.setConfig({
 
 Ext.application({
     stores: [
-        'strMethods'
+        'strMethods',
+        'strContentType'
     ],
     views: [
         'wndLogin',
-        'frmMain',
-        'frmBody'
+        'frmMain'
     ],
     name: 'JumboPets',
 

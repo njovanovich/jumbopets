@@ -17,7 +17,8 @@ class Tag
     private $id;
 
     /**
-     * @var integer name of tag
+     * @var string name of tag
+     * @ORM\Column(type="string")
      */
     private $name;
 
@@ -27,20 +28,19 @@ class Tag
     }
 
     /**
-     * @return int
+     * @return string
      */
-    public function getName(): int
+    public function getName(): string
     {
         return $this->name;
     }
 
     /**
-     * @param int $name
+     * @param string $name
      */
-    public function setName(int $name): void
+    public function setName(string $name): void
     {
         $this->name = $name;
     }
-
 
 }

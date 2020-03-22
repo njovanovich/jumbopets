@@ -2,6 +2,7 @@
 
 namespace App\Entity;
 
+use Doctrine\Common\Collections\ArrayCollection;
 use Doctrine\ORM\Mapping as ORM;
 
 /**
@@ -19,41 +20,53 @@ class Pet
 
     /**
      * @var Category category of pet
-     * @ORM\ManyToOne(targetEntity="App\Entity\Category")
+     * @ORM\ManyToOne(targetEntity="App\Entity\Category",fetch="EAGER")
      * @ORM\JoinColumn(name="categtory", referencedColumnName="id",onDelete="SET NULL")
      */
     private $category;
 
     /**
-     * @var name example: doggie
+     * @var string name example: doggie
      * @ORM\Column(type="string")
      */
     private $name;
 
     /**
-     * @var text photoUrls
-     * @ORM\Column(type="text")
+     * @var string photoUrls
+     * @ORM\Column(type="string")
      */
     private $photoUrls;
 
     /**
-     * @var text tags of pet
-     * @ORM\ManyToMany(targetEntity="App\Entity\Tag")
+     * @var Tag[] tags of pet
+     * @ORM\ManyToMany(targetEntity="App\Entity\Tag",fetch="EAGER")
      * @ORM\JoinTable(name="pet_tags",
-     *      joinColumns={@ORM\JoinColumn(name="tag",referencedColumnName="id",onDelete="CASCADE")},
-     *      inverseJoinColumns={@ORM\JoinColumn(name="pet",referencedColumnName="id",onDelete="CASCADE")}
+     *      joinColumns={@ORM\JoinColumn(name="pet",referencedColumnName="id",onDelete="CASCADE")},
+     *      inverseJoinColumns={@ORM\JoinColumn(name="tag",referencedColumnName="id",onDelete="CASCADE")}
      * )
      */
     private $tags;
 
     /**
-     * @var integer status
+     * @var string status
+     * @ORM\Column(type="string")
      */
     private $status;
 
-    public function getId(): ?int
+    /**
+     * @return mixed
+     */
+    public function getId()
     {
         return $this->id;
+    }
+
+    /**
+     * @param mixed $id
+     */
+    public function setId($id): void
+    {
+        $this->id = $id;
     }
 
     /**
@@ -73,68 +86,77 @@ class Pet
     }
 
     /**
-     * @return name
+     * @return string
      */
-    public function getName(): name
+    public function getName(): string
     {
         return $this->name;
     }
 
     /**
-     * @param name $name
+     * @param string $name
      */
-    public function setName(name $name): void
+    public function setName(string $name): void
     {
         $this->name = $name;
     }
 
     /**
-     * @return text
+     * @return Doctrine\ORM\PersistentCollection
      */
-    public function getPhotoUrls(): text
-    {
-        return $this->photoUrls;
-    }
-
-    /**
-     * @param text $photoUrls
-     */
-    public function setPhotoUrls(text $photoUrls): void
-    {
-        $this->photoUrls = $photoUrls;
-    }
-
-    /**
-     * @return text
-     */
-    public function getTags(): text
+    public function getTags()
     {
         return $this->tags;
     }
 
     /**
-     * @param text $tags
+     * @param Tag[] $tags
      */
-    public function setTags(text $tags): void
+    public function setTags(array $tags): void
     {
         $this->tags = $tags;
     }
 
     /**
-     * @return int
+     * @param Tag $tag
      */
-    public function getStatus(): int
+    public function addTag(Tag $tag): void
+    {
+        $this->tags[] = $tag;
+    }
+
+    /**
+     * @return string
+     */
+    public function getStatus(): string
     {
         return $this->status;
     }
 
     /**
-     * @param int $status
+     * @param string $status
      */
-    public function setStatus(int $status): void
+    public function setStatus(string $status): void
     {
         $this->status = $status;
     }
+
+    /**
+     * @return array
+     */
+    public function getPhotoUrls(): array
+    {
+        return explode(",", $this->photoUrls);
+    }
+
+    /**
+     * @param string[] $photoUrls
+     */
+    public function setPhotoUrls(array $photoUrls): void
+    {
+        $this->photoUrls = implode(",", $photoUrls);
+    }
+
 
 
 }

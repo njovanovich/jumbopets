@@ -911,10 +911,8 @@ $include-ext-view-view: dynamic(true);;
 $include-ext-window-messagebox: dynamic(true);;
 $include-ext-window-toast: dynamic(true);;
 $include-ext-window-window: dynamic(true);;
+$include-jumbopets-store-strcontenttype: dynamic(true);;
 $include-jumbopets-store-strmethods: dynamic(true);;
-$include-jumbopets-view-frmbody: dynamic(true);;
-$include-jumbopets-view-frmbodyviewcontroller: dynamic(true);;
-$include-jumbopets-view-frmbodyviewmodel: dynamic(true);;
 $include-jumbopets-view-frmmain: dynamic(true);;
 $include-jumbopets-view-frmmainviewcontroller: dynamic(true);;
 $include-jumbopets-view-frmmainviewmodel: dynamic(true);;
@@ -922,14 +920,6 @@ $include-jumbopets-view-wndlogin: dynamic(true);;
 $output-paths: ("path": "../resources");
 
 /* ======================== ETC ======================== */
-
-/* including package ext */
-$ext-resource-root: '' !default;
-$ext-resource-path: 'images' !default;
-$current-package: 'ext';
-$current-resource-root: $ext-resource-root;
-$relative-image-path-for-uis: $ext-resource-path;
-@import '../../../../../ext/sass/etc/all';
 
 /* including package core */
 $core-resource-root: '' !default;
